@@ -12,6 +12,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@cloudflare/kv-asset-handler": "^0.5.0",
     "astro": "^6.4.7"
   }
 }

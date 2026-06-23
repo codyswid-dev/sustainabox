@@ -1,14 +1,14 @@
 name = "sustainabox"
-type = "javascript"
+main = "workers-site/index.js"
 compatibility_date = "2024-12-16"
 
 [site]
 bucket = "./dist"
 
 [[routes]]
-pattern = "sustainabox.org"
+pattern = "sustainabox.org/*"
 zone_name = "sustainabox.org"
 
 [[routes]]
-pattern = "www.sustainabox.org"
+pattern = "www.sustainabox.org/*"
 zone_name = "sustainabox.org"
