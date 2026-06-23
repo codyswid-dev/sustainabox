@@ -1,0 +1,236 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Community — Sustainabox">
+
+	<div class="page-header">
+		<div class="container">
+			<h1>Sustainabox Community</h1>
+			<p>Join a network of builders, designers, and entrepreneurs building resilient housing and alternative homes.</p>
+		</div>
+	</div>
+
+	<section class="container content-section">
+		<h2>What You Get</h2>
+
+		<div class="benefits">
+			<div class="benefit">
+				<h3>Expert Office Hours</h3>
+				<p>Monthly video calls with Cody. Bring your questions, get feedback, solve problems together.</p>
+			</div>
+			<div class="benefit">
+				<h3>Member-Only Resources</h3>
+				<p>Templates, checklists, design guides, cost data, and lessons learned. Everything learned from the Sustainabox build.</p>
+			</div>
+			<div class="benefit">
+				<h3>Private Community Forum</h3>
+				<p>Ask questions, share progress, get feedback from peers. 24/7 access to the collective knowledge of everyone building.</p>
+			</div>
+			<div class="benefit">
+				<h3>Exclusive Discounts</h3>
+				<p>10% off the cohort-based course. Early access to new products and templates.</p>
+			</div>
+			<div class="benefit">
+				<h3>Design Feedback</h3>
+				<p>Share your project. Get constructive feedback from other builders and the instructor. Learn from others' mistakes.</p>
+			</div>
+			<div class="benefit">
+				<h3>Peer Network</h3>
+				<p>Connect with builders, designers, engineers, and vendors. Share referrals and recommendations. Build relationships that last.</p>
+			</div>
+		</div>
+
+		<h2 style="margin-top: 3rem;">How It Works</h2>
+		<ol class="process">
+			<li><strong>Join as a member.</strong> $30/month or $300/year.</li>
+			<li><strong>Get instant access.</strong> Forum, resources, upcoming office hour dates.</li>
+			<li><strong>Participate.</strong> Ask questions, share progress, get feedback. Monthly office hours.</li>
+			<li><strong>Stay connected.</strong> Keep learning even after your project is done. Help others.</li>
+		</ol>
+
+		<h2 style="margin-top: 3rem;">Who's Here</h2>
+		<p>First-time container home builders. Architects exploring alternative housing. Construction companies diversifying into resilient design. Engineers and designers. Investors looking at this space. Anyone building or thinking about building differently.</p>
+
+		<h2 style="margin-top: 3rem;">Why Join</h2>
+		<div class="why-grid">
+			<div class="why-card">
+				<strong>Avoid Mistakes</strong>
+				<p>Learn from others' experience. Catch issues before they become expensive.</p>
+			</div>
+			<div class="why-card">
+				<strong>Save Time</strong>
+				<p>Access real templates and frameworks. Don't reinvent the wheel.</p>
+			</div>
+			<div class="why-card">
+				<strong>Build Relationships</strong>
+				<p>Network with peers and professionals in this space. Collaborations happen here.</p>
+			</div>
+			<div class="why-card">
+				<strong>Keep Learning</strong>
+				<p>New resources, new members with new experiences. The collective knowledge keeps growing.</p>
+			</div>
+		</div>
+
+		<div class="pricing-box">
+			<h3>Membership</h3>
+			<p><strong>$30/month</strong> or <strong>$300/year</strong> (2 months free if you pay annually)</p>
+			<ul>
+				<li>Unlimited access to forum and resources</li>
+				<li>Monthly expert office hours</li>
+				<li>10% discount on course and products</li>
+				<li>Early access to new content</li>
+				<li>Cancel anytime, no lock-in</li>
+			</ul>
+		</div>
+
+		<div class="cta-box">
+			<h3>Ready to Join?</h3>
+			<p>Jump in and start connecting with builders and makers like you.</p>
+			<a href="/contact" class="btn btn-primary">Join the Community</a>
+		</div>
+	</section>
+
+</Layout>
+
+<style>
+	.page-header {
+		background: var(--color-navy);
+		color: white;
+		padding: 4rem 0;
+		text-align: center;
+	}
+
+	.page-header h1 {
+		color: white;
+		margin-bottom: 1rem;
+	}
+
+	.page-header p {
+		font-size: 1.1rem;
+		opacity: 0.9;
+	}
+
+	.content-section {
+		padding: 3rem 0;
+	}
+
+	.content-section h2 {
+		margin-bottom: 2rem;
+		padding-bottom: 1rem;
+		border-bottom: 2px solid var(--color-blue);
+	}
+
+	.benefits {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 2rem;
+	}
+
+	.benefit {
+		background: var(--color-warm);
+		padding: 1.5rem;
+		border-radius: 8px;
+		border-left: 4px solid var(--color-blue);
+	}
+
+	.benefit h3 {
+		color: var(--color-blue);
+		margin-bottom: 0.75rem;
+	}
+
+	.benefit p {
+		font-size: 0.95rem;
+		color: var(--color-muted);
+	}
+
+	.process {
+		background: var(--color-warm);
+		padding: 2rem;
+		border-radius: 8px;
+		line-height: 1.8;
+	}
+
+	.process li {
+		margin-bottom: 1rem;
+	}
+
+	.why-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 1.5rem;
+	}
+
+	.why-card {
+		background: var(--color-warm);
+		padding: 1.5rem;
+		border-radius: 8px;
+	}
+
+	.why-card strong {
+		color: var(--color-blue);
+		display: block;
+		margin-bottom: 0.5rem;
+	}
+
+	.why-card p {
+		font-size: 0.9rem;
+		color: var(--color-muted);
+	}
+
+	.pricing-box {
+		background: var(--color-navy);
+		color: white;
+		padding: 2rem;
+		border-radius: 8px;
+		margin: 2rem 0;
+	}
+
+	.pricing-box h3 {
+		color: white;
+		margin-bottom: 0.5rem;
+	}
+
+	.pricing-box p {
+		font-size: 1.1rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.pricing-box ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	.pricing-box li {
+		padding: 0.5rem 0;
+		padding-left: 1.5rem;
+		position: relative;
+	}
+
+	.pricing-box li::before {
+		content: "✓";
+		position: absolute;
+		left: 0;
+		color: var(--color-sky);
+		font-weight: 700;
+	}
+
+	.cta-box {
+		background: var(--color-blue);
+		color: white;
+		padding: 2rem;
+		border-radius: 8px;
+		text-align: center;
+		margin-top: 3rem;
+	}
+
+	.cta-box h3 {
+		color: white;
+		margin-bottom: 1rem;
+	}
+
+	.cta-box p {
+		margin-bottom: 1.5rem;
+		opacity: 0.95;
+	}
+</style>

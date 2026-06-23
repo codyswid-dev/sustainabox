@@ -1,0 +1,245 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Course — Designing Your Resilient Home — Sustainabox">
+
+	<div class="page-header">
+		<div class="container">
+			<h1>Designing Your Resilient Home</h1>
+			<p>An 8-week cohort course learning the full design-to-build process from someone who's actually built it.</p>
+		</div>
+	</div>
+
+	<section class="container content-section">
+		<h2>What You'll Learn</h2>
+		<p>This course walks you through every phase of designing and planning a container home or alternative housing project:</p>
+
+		<div class="modules">
+			<div class="module">
+				<h3>Week 1–2: Design Foundations</h3>
+				<p>Site analysis, design constraints, space planning, and how to use SketchUp for quick iteration.</p>
+			</div>
+			<div class="module">
+				<h3>Week 3: Cost & Materials</h3>
+				<p>Real costs for containers, structural work, MEP systems, finishes. How to estimate accurately and where to expect surprises.</p>
+			</div>
+			<div class="module">
+				<h3>Week 4: Permitting & Code</h3>
+				<p>What codes apply (IRC, local zoning, setbacks). How to talk to inspectors and permitting officials. Common code pitfalls and how to avoid them.</p>
+			</div>
+			<div class="module">
+				<h3>Week 5: Structural & Systems</h3>
+				<p>Container modification, foundation design, MEP coordination. How to work with engineers and contractors.</p>
+			</div>
+			<div class="module">
+				<h3>Week 6: Timeline & Risk</h3>
+				<p>Realistic timeline with dependencies. What could go wrong (supply chain, contractor delays, code conflicts) and how to mitigate.</p>
+			</div>
+			<div class="module">
+				<h3>Week 7: Trade Coordination</h3>
+				<p>Managing contractors and vendors. Sequence of work, quality control, cost overrun prevention.</p>
+			</div>
+			<div class="module">
+				<h3>Week 8: Your Project Plan</h3>
+				<p>You finalize your own design and planning document, reviewed by the instructor.</p>
+			</div>
+		</div>
+
+		<h2 style="margin-top: 3rem;">How It Works</h2>
+		<ul class="how-list">
+			<li><strong>Live weekly calls</strong> (Thursdays 7–8pm CT). Expert input, Q&A, group discussion.</li>
+			<li><strong>Async work.</strong> Read materials, work on your own project, submit questions.</li>
+			<li><strong>Templates & tools.</strong> Cost calculator, project planner, decision framework, code checklist.</li>
+			<li><strong>Community forum.</strong> Get feedback from other builders. Learn from their questions and mistakes.</li>
+			<li><strong>Private Slack group.</strong> Direct access to the instructor and peers.</li>
+		</ul>
+
+		<h2 style="margin-top: 3rem;">Who This Is For</h2>
+		<ul class="audience-list">
+			<li>Individuals planning their first container home</li>
+			<li>Designers or architects wanting to enter the alternative housing space</li>
+			<li>Builders wanting to specialize in resilient or sustainable housing</li>
+			<li>Anyone wanting to understand the full design-to-build process, start to finish</li>
+		</ul>
+
+		<h2 style="margin-top: 3rem;">Who's Teaching</h2>
+		<p>Cody Swidler. 15+ years in enterprise resilience and risk management. Designed and built a full container home near Austin. Lessons documented. Not theoretical—practical, grounded, real.</p>
+
+		<h2 style="margin-top: 3rem;">Pricing & Dates</h2>
+		<div class="pricing-box">
+			<h3>$750–$1,200 per cohort</h3>
+			<p><strong>Includes:</strong></p>
+			<ul>
+				<li>8 weekly live calls</li>
+				<li>All templates and tools</li>
+				<li>Lifetime access to course materials</li>
+				<li>Private community and Slack</li>
+				<li>Your personalized project plan (reviewed)</li>
+			</ul>
+			<p style="margin-top: 1.5rem;"><strong>Next Cohort:</strong> Check back soon for dates and enrollment details.</p>
+		</div>
+
+		<div class="cta-box">
+			<h3>Ready to Learn?</h3>
+			<p>Join the next cohort. Spots are limited to keep the group engaged and tight.</p>
+			<a href="/contact" class="btn btn-primary">Get on the Waitlist</a>
+		</div>
+	</section>
+
+</Layout>
+
+<style>
+	.page-header {
+		background: var(--color-navy);
+		color: white;
+		padding: 4rem 0;
+		text-align: center;
+	}
+
+	.page-header h1 {
+		color: white;
+		margin-bottom: 1rem;
+	}
+
+	.page-header p {
+		font-size: 1.1rem;
+		opacity: 0.9;
+	}
+
+	.content-section {
+		padding: 3rem 0;
+	}
+
+	.content-section h2 {
+		margin-bottom: 1.5rem;
+		padding-bottom: 1rem;
+		border-bottom: 2px solid var(--color-blue);
+	}
+
+	.content-section > p {
+		font-size: 1.05rem;
+		margin-bottom: 2rem;
+	}
+
+	.modules {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 1.5rem;
+		margin-bottom: 2rem;
+	}
+
+	.module {
+		background: var(--color-warm);
+		padding: 1.5rem;
+		border-radius: 8px;
+		border-left: 4px solid var(--color-blue);
+	}
+
+	.module h3 {
+		color: var(--color-blue);
+		margin-bottom: 0.75rem;
+		font-size: 1rem;
+	}
+
+	.module p {
+		font-size: 0.9rem;
+		color: var(--color-muted);
+	}
+
+	.how-list {
+		list-style: none;
+		padding: 0;
+		background: var(--color-warm);
+		padding: 2rem;
+		border-radius: 8px;
+	}
+
+	.how-list li {
+		padding: 0.75rem 0;
+		padding-left: 1.5rem;
+		position: relative;
+	}
+
+	.how-list li::before {
+		content: "→";
+		position: absolute;
+		left: 0;
+		color: var(--color-blue);
+		font-weight: 700;
+	}
+
+	.audience-list {
+		list-style: none;
+		padding: 0;
+		background: var(--color-warm);
+		padding: 2rem;
+		border-radius: 8px;
+	}
+
+	.audience-list li {
+		padding: 0.75rem 0;
+		padding-left: 1.5rem;
+		position: relative;
+	}
+
+	.audience-list li::before {
+		content: "✓";
+		position: absolute;
+		left: 0;
+		color: var(--color-blue);
+		font-weight: 700;
+	}
+
+	.pricing-box {
+		background: var(--color-navy);
+		color: white;
+		padding: 2rem;
+		border-radius: 8px;
+		margin: 2rem 0;
+	}
+
+	.pricing-box h3 {
+		color: white;
+		font-size: 1.8rem;
+		margin-bottom: 1rem;
+	}
+
+	.pricing-box ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	.pricing-box li {
+		padding: 0.5rem 0;
+		padding-left: 1.5rem;
+		position: relative;
+	}
+
+	.pricing-box li::before {
+		content: "✓";
+		position: absolute;
+		left: 0;
+		color: var(--color-sky);
+		font-weight: 700;
+	}
+
+	.cta-box {
+		background: var(--color-blue);
+		color: white;
+		padding: 2rem;
+		border-radius: 8px;
+		text-align: center;
+		margin-top: 3rem;
+	}
+
+	.cta-box h3 {
+		color: white;
+		margin-bottom: 1rem;
+	}
+
+	.cta-box p {
+		margin-bottom: 1.5rem;
+		opacity: 0.95;
+	}
+</style>

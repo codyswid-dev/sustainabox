@@ -1,0 +1,11 @@
+{
+  "name": "sustainabox",
+  "compatibility_date": "2025-06-01",
+  "assets": {
+    "directory": "./dist"
+  },
+  "routes": [
+    { "pattern": "sustainabox.org", "custom_domain": true },
+    { "pattern": "www.sustainabox.org", "custom_domain": true }
+  ]
+}

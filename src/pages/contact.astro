@@ -1,0 +1,95 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Contact — Sustainabox">
+
+	<div class="page-header">
+		<div class="container">
+			<h1>Get in Touch</h1>
+			<p>Questions? Ready to start? Let's talk.</p>
+		</div>
+	</div>
+
+	<section class="container content-section">
+		<div class="contact-box">
+			<h2>Reach Out</h2>
+			<p>Email us to:</p>
+			<ul>
+				<li>Schedule a free 30-minute consulting call</li>
+				<li>Ask questions about the course</li>
+				<li>Get on the waitlist for the next cohort</li>
+				<li>Join the community</li>
+				<li>Anything else</li>
+			</ul>
+			<p style="margin-top: 2rem;">
+				<strong><a href="mailto:hello@sustainabox.com" style="color: var(--color-blue); text-decoration: none; font-size: 1.2rem;">hello@sustainabox.com</a></strong>
+			</p>
+			<p style="color: var(--color-muted); margin-top: 1rem;">We'll respond within 24 hours.</p>
+		</div>
+	</section>
+
+</Layout>
+
+<style>
+	.page-header {
+		background: var(--color-navy);
+		color: white;
+		padding: 4rem 0;
+		text-align: center;
+	}
+
+	.page-header h1 {
+		color: white;
+		margin-bottom: 1rem;
+	}
+
+	.page-header p {
+		font-size: 1.1rem;
+		opacity: 0.9;
+	}
+
+	.content-section {
+		padding: 4rem 0;
+	}
+
+	.contact-box {
+		background: var(--color-warm);
+		padding: 3rem;
+		border-radius: 12px;
+		max-width: 500px;
+		margin: 0 auto;
+		text-align: center;
+		border-left: 4px solid var(--color-blue);
+	}
+
+	.contact-box h2 {
+		margin-bottom: 1.5rem;
+	}
+
+	.contact-box p {
+		font-size: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	.contact-box ul {
+		list-style: none;
+		padding: 0;
+		text-align: left;
+		display: inline-block;
+	}
+
+	.contact-box li {
+		padding: 0.5rem 0;
+		padding-left: 1.5rem;
+		position: relative;
+	}
+
+	.contact-box li::before {
+		content: "✓";
+		position: absolute;
+		left: 0;
+		color: var(--color-blue);
+		font-weight: 700;
+	}
+</style>
