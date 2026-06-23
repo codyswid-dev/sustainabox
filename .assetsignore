@@ -1,0 +1,8 @@
+.git
+.gitignore
+node_modules
+.env
+.env.local
+src/
+astro.config.mjs
+tsconfig.json
