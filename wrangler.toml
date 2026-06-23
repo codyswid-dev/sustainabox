@@ -1,0 +1,14 @@
+name = "sustainabox"
+type = "javascript"
+main = "dist/index.html"
+build = { command = "npm run build", cwd = "." }
+compatibility_date = "2024-12-16"
+
+[env.production]
+routes = [
+  { pattern = "sustainabox.org", zone_name = "sustainabox.org" },
+  { pattern = "www.sustainabox.org", zone_name = "sustainabox.org" }
+]
+
+[site]
+bucket = "./dist"
