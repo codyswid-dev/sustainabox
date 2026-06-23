@@ -141,6 +141,23 @@ import Layout from '../layouts/Layout.astro';
 		</div>
 	</section>
 
+	<!-- Property Gallery -->
+	<section class="gallery-showcase">
+		<div class="container">
+			<h2>The Completed Project</h2>
+			<p>Aerial, perspective, and interior views of the finished compound.</p>
+
+			<div class="gallery-grid">
+				<img src="/images/dji_fly_20251009_113558_0029_1760027921717_photo.jpg" alt="Aerial view - compound overview" loading="lazy" />
+				<img src="/images/dji_fly_20251009_113602_0030_1760027921121_photo.jpg" alt="Aerial view - containers and landscape" loading="lazy" />
+				<img src="/images/dji_fly_20251009_113608_0031_1760027920526_photo.jpg" alt="Aerial view - deck and courtyard" loading="lazy" />
+				<img src="/images/Split-View-1.jpg" alt="Split view - exterior perspective" loading="lazy" />
+				<img src="/images/Split-View-2.jpg" alt="Split view - site context" loading="lazy" />
+				<img src="/images/Split-View-3.jpg" alt="Split view - angle view" loading="lazy" />
+			</div>
+		</div>
+	</section>
+
 	<!-- What's Next -->
 	<section class="whats-next">
 		<div class="container">
@@ -159,7 +176,7 @@ import Layout from '../layouts/Layout.astro';
 		const lightbox = document.getElementById('lightbox');
 		const lbImg = lightbox?.querySelector('img');
 
-		document.querySelectorAll('.gallery img').forEach(img => {
+		document.querySelectorAll('.gallery img, .gallery-grid img').forEach(img => {
 			img.addEventListener('click', () => {
 				if (lbImg && lightbox) {
 					lbImg.src = img.src;
@@ -286,6 +303,45 @@ import Layout from '../layouts/Layout.astro';
 		background: var(--color-sky);
 	}
 
+	/* Gallery Showcase */
+	.gallery-showcase {
+		padding: 5rem 0;
+		background: white;
+	}
+
+	.gallery-showcase h2 {
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+
+	.gallery-showcase > .container > p {
+		text-align: center;
+		color: var(--color-muted);
+		margin-bottom: 2.5rem;
+	}
+
+	.gallery-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 1rem;
+		margin-bottom: 2rem;
+	}
+
+	.gallery-grid img {
+		width: 100%;
+		height: 250px;
+		object-fit: cover;
+		border-radius: 8px;
+		cursor: pointer;
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+		box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+	}
+
+	.gallery-grid img:hover {
+		transform: scale(1.02);
+		box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+	}
+
 	/* Contact */
 	.contact-section {
 		text-align: center;
@@ -300,6 +356,32 @@ import Layout from '../layouts/Layout.astro';
 		margin-top: 1.5rem;
 	}
 
+	/* Lightbox */
+	.lightbox {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.9);
+		z-index: 1000;
+		padding: 2rem;
+		overflow: auto;
+	}
+
+	.lightbox.active {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.lightbox img {
+		max-width: 90vw;
+		max-height: 90vh;
+		object-fit: contain;
+	}
+
 	/* Mobile */
 	@media (max-width: 768px) {
 		.hero h1 {
@@ -311,6 +393,10 @@ import Layout from '../layouts/Layout.astro';
 		}
 
 		.container-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.gallery-grid {
 			grid-template-columns: 1fr;
 		}
 	}
