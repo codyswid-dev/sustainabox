@@ -15,61 +15,35 @@ import Layout from '../layouts/Layout.astro';
 		</div>
 	</header>
 
-	<!-- Philosophy -->
-	<section class="philosophy-section">
+	<!-- About Sustainabox -->
+	<section class="about-section">
 		<div class="container">
-			<h2>Our Philosophy</h2>
-			<p>Sustainabox is more than a home. It's a commitment to living intentionally.</p>
+			<h2>About Sustainabox</h2>
+			<p>We built a home from three shipping containers on the Texas Hill Country. Not as an experiment, but as a real solution to the question: What does sustainable living actually look like when you're willing to do the work?</p>
 
-			<div class="philosophy-grid">
-				<div class="philosophy-card">
-					<div class="philosophy-icon">🏠</div>
-					<h3>Tiny</h3>
-					<p>Efficient, purposeful living. No wasted space. Everything has a reason. Maximum comfort in minimal footprint.</p>
+			<div class="about-content">
+				<div class="about-text">
+					<p><strong>The Story:</strong> We took shipping containers, a piece of raw land, and 15+ years of enterprise resilience experience. We designed every system for efficiency, durability, and adaptability. We made mistakes. We learned. We built something real.</p>
+					<p>Sustainabox isn't a lifestyle brand. It's a case study. And now we're opening it up—inviting people to see it, stay in it, learn from it, and understand what this approach to housing actually requires and enables.</p>
 				</div>
-				<div class="philosophy-card">
-					<div class="philosophy-icon">🌱</div>
-					<h3>Sustainable</h3>
-					<p>Built to last. Off-grid capable. Low impact on the environment. Designed for resilience in an uncertain world.</p>
-				</div>
-				<div class="philosophy-card">
-					<div class="philosophy-icon">⚙️</div>
-					<h3>Simple</h3>
-					<p>Straightforward systems. No unnecessary complexity. Easy to maintain, repair, and understand. Elegant in its simplicity.</p>
-				</div>
-				<div class="philosophy-card">
-					<div class="philosophy-icon">🌍</div>
-					<h3>Travel365</h3>
-					<p>Mobile by design. Your home goes where you go. Built for adventure, travel, and exploration without leaving home behind.</p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Stay & Learn Featured -->
-	<section class="featured-section">
-		<div class="container">
-			<div class="featured-content">
-				<h2>Stay & Learn</h2>
-				<p>The most likely way we make money: putting Sustainabox on Airbnb and attracting people who want to understand alternative housing firsthand.</p>
-				<p>Join us for a weekend or week-long immersion. Sleep in the containers. Learn how it's built. Understand what sustainable living actually means—the good, the challenges, and everything in between.</p>
-
-				<div class="featured-highlights">
-					<div class="highlight">
-						<strong>Weekend Experience</strong>
-						<p>$599–$799 · Friday to Sunday with 4-hour building walkthrough</p>
+				<div class="about-stats">
+					<div class="stat">
+						<div class="stat-number">3</div>
+						<div class="stat-label">Containers</div>
 					</div>
-					<div class="highlight">
-						<strong>Week-Long Immersion</strong>
-						<p>$2,400–$3,200 · Deep learning with multiple workshops</p>
+					<div class="stat">
+						<div class="stat-number">1600+</div>
+						<div class="stat-label">Sq Ft</div>
 					</div>
-					<div class="highlight">
-						<strong>Group Retreats</strong>
-						<p>Custom pricing · For teams wanting to learn together</p>
+					<div class="stat">
+						<div class="stat-number">100%</div>
+						<div class="stat-label">Real</div>
+					</div>
+					<div class="stat">
+						<div class="stat-number">15+</div>
+						<div class="stat-label">Years Expertise</div>
 					</div>
 				</div>
-
-				<a href="/stays" class="btn btn-primary">Explore Stays</a>
 			</div>
 		</div>
 	</section>
@@ -213,6 +187,46 @@ import Layout from '../layouts/Layout.astro';
 					<h3>The Build</h3>
 					<p>Complete documentation of our container home build. Drawings, systems, specifications, and technical details from start to finish.</p>
 					<a href="/construction" class="btn btn-outline">See Details</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Airbnb Ribbon CTA -->
+	<section class="airbnb-ribbon">
+		<div class="ribbon-content">
+			<h3>Ready to Experience It?</h3>
+			<p>Visit us on Airbnb. Stay the weekend. Learn the build. Join the community.</p>
+			<a href="/stays" class="btn btn-white">Explore Stays on Airbnb</a>
+		</div>
+	</section>
+
+	<!-- Philosophy -->
+	<section class="philosophy-section">
+		<div class="container">
+			<h2>Our Philosophy</h2>
+			<p>Sustainabox is more than a home. It's a commitment to living intentionally.</p>
+
+			<div class="philosophy-grid">
+				<div class="philosophy-card">
+					<div class="philosophy-icon">🏠</div>
+					<h3>Tiny</h3>
+					<p>Efficient, purposeful living. No wasted space. Everything has a reason. Maximum comfort in minimal footprint.</p>
+				</div>
+				<div class="philosophy-card">
+					<div class="philosophy-icon">🌱</div>
+					<h3>Sustainable</h3>
+					<p>Built to last. Off-grid capable. Low impact on the environment. Designed for resilience in an uncertain world.</p>
+				</div>
+				<div class="philosophy-card">
+					<div class="philosophy-icon">⚙️</div>
+					<h3>Simple</h3>
+					<p>Straightforward systems. No unnecessary complexity. Easy to maintain, repair, and understand. Elegant in its simplicity.</p>
+				</div>
+				<div class="philosophy-card">
+					<div class="philosophy-icon">🌍</div>
+					<h3>Travel365</h3>
+					<p>Mobile by design. Your home goes where you go. Built for adventure, travel, and exploration without leaving home behind.</p>
 				</div>
 			</div>
 		</div>
@@ -595,60 +609,104 @@ import Layout from '../layouts/Layout.astro';
 		background: var(--color-blue);
 	}
 
-	/* Featured Stay Section */
-	.featured-section {
+	/* About Section */
+	.about-section {
 		padding: 5rem 0;
-		background: linear-gradient(135deg, var(--color-blue), var(--color-navy));
-		color: white;
+		background: white;
 	}
 
-	.featured-content h2 {
-		color: white;
+	.about-section h2 {
 		text-align: center;
 		margin-bottom: 1.5rem;
 	}
 
-	.featured-content > p {
+	.about-section > .container > p {
 		text-align: center;
 		font-size: 1.1rem;
 		max-width: 700px;
-		margin: 0 auto 1.5rem;
-		opacity: 0.95;
+		margin: 0 auto 3rem;
+		color: var(--color-muted);
 		line-height: 1.8;
 	}
 
-	.featured-highlights {
+	.about-content {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		grid-template-columns: 1fr 1fr;
+		gap: 4rem;
+		align-items: center;
+	}
+
+	.about-text p {
+		margin-bottom: 1.5rem;
+		line-height: 1.8;
+		color: var(--color-muted);
+	}
+
+	.about-text strong {
+		color: var(--color-navy);
+	}
+
+	.about-stats {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
 		gap: 2rem;
-		margin: 2rem 0 3rem 0;
 	}
 
-	.highlight {
-		background: rgba(255, 255, 255, 0.1);
-		padding: 2rem;
-		border-radius: 4px;
-		border-left: 4px solid white;
+	.stat {
 		text-align: center;
+		padding: 2rem;
+		background: var(--color-warm);
+		border-radius: 4px;
 	}
 
-	.highlight strong {
+	.stat-number {
+		font-size: 2.5rem;
+		font-weight: 700;
+		color: var(--color-blue);
 		display: block;
-		font-size: 1.1rem;
-		margin-bottom: 0.75rem;
+		margin-bottom: 0.5rem;
 	}
 
-	.highlight p {
-		opacity: 0.9;
+	.stat-label {
+		color: var(--color-muted);
 		font-size: 0.95rem;
 	}
 
-	.featured-content {
+	/* Airbnb Ribbon */
+	.airbnb-ribbon {
+		background: linear-gradient(135deg, var(--color-blue), var(--color-navy));
+		color: white;
+		padding: 3rem 0;
 		text-align: center;
 	}
 
-	.featured-section .btn {
-		margin-top: 1rem;
+	.ribbon-content {
+		max-width: 600px;
+		margin: 0 auto;
+		padding: 0 2rem;
+	}
+
+	.airbnb-ribbon h3 {
+		color: white;
+		font-size: 1.8rem;
+		margin-bottom: 1rem;
+	}
+
+	.airbnb-ribbon p {
+		font-size: 1.1rem;
+		margin-bottom: 2rem;
+		opacity: 0.95;
+	}
+
+	.btn-white {
+		background: white;
+		color: var(--color-blue);
+		font-weight: 600;
+	}
+
+	.btn-white:hover {
+		background: var(--color-sky);
+		color: var(--color-navy);
 	}
 
 	/* Mobile */
@@ -659,6 +717,15 @@ import Layout from '../layouts/Layout.astro';
 
 		.hero-tagline {
 			font-size: 1rem;
+		}
+
+		.about-content {
+			grid-template-columns: 1fr;
+			gap: 2rem;
+		}
+
+		.about-stats {
+			grid-template-columns: repeat(2, 1fr);
 		}
 
 		.philosophy-grid {
