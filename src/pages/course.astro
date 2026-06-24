@@ -91,8 +91,20 @@ import Layout from '../layouts/Layout.astro';
 			<li>Remote learners who want depth without cohort commitment</li>
 		</ul>
 
-		<h2 style="margin-top: 3rem;">Instructor</h2>
-		<p>Cody Swidler. 15+ years in enterprise resilience and risk management. Designed and built this home from the ground up. No theory—just what actually works and what we'd do differently.</p>
+		<h2 style="margin-top: 3rem;">Who's Teaching</h2>
+
+		<div class="instructor-grid">
+			<div class="instructor-card">
+				<h3>Jen Swidler</h3>
+				<p class="role">General Contractor · Project Manager</p>
+				<p>Built a home in Evergreen, Colorado from the ground up. Then spent 6 years as a consultant with the builder, managing every aspect: subcontractor hiring and management, scheduling, cost control, timeline, quality. The person who actually made this build happen. She knows how to work with trades, solve problems on the fly, and keep complex projects on track.</p>
+			</div>
+			<div class="instructor-card">
+				<h3>Cody Swidler</h3>
+				<p class="role">Enterprise Resilience · Design Strategy</p>
+				<p>15+ years in enterprise resilience and risk management. Brought the design thinking, systems approach, and risk mitigation to the project. Contributed hands-on labor throughout the build. The "why" behind the design decisions and the "how" of resilient systems.</p>
+			</div>
+		</div>
 
 		<div class="cta-box">
 			<h3>Ready to Learn?</h3>
@@ -266,6 +278,39 @@ import Layout from '../layouts/Layout.astro';
 		color: var(--color-blue);
 		font-weight: bold;
 		content: "•";
+	}
+
+	.instructor-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		gap: 2rem;
+		margin: 2rem 0;
+	}
+
+	.instructor-card {
+		background: var(--color-warm);
+		padding: 2rem;
+		border-radius: 4px;
+		border-left: 4px solid var(--color-blue);
+	}
+
+	.instructor-card h3 {
+		color: var(--color-navy);
+		margin-bottom: 0.25rem;
+		font-size: 1.3rem;
+	}
+
+	.instructor-card .role {
+		color: var(--color-blue);
+		font-size: 0.9rem;
+		font-weight: 600;
+		margin-bottom: 1rem !important;
+	}
+
+	.instructor-card p {
+		color: var(--color-muted);
+		line-height: 1.7;
+		font-size: 0.95rem;
 	}
 
 	.cta-box {

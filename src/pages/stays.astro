@@ -196,6 +196,27 @@ import Layout from '../layouts/Layout.astro';
 		</div>
 	</section>
 
+	<!-- Who's Teaching -->
+	<section class="teaching-section">
+		<div class="container">
+			<h2>Who You're Learning From</h2>
+
+			<div class="instructor-bios">
+				<div class="instructor">
+					<h3>Jen Swidler</h3>
+					<p><strong>General Contractor · Project Manager · Builder</strong></p>
+					<p>Built a home in Evergreen, Colorado from the ground up. Then spent 6 years as a consultant with the builder, managing every aspect: scheduling, hiring and managing subcontractors, cost control, timeline, quality. The person who actually made this build happen. She knows how to work with trades, solve problems on the fly, and keep projects on track and on budget.</p>
+				</div>
+
+				<div class="instructor">
+					<h3>Cody Swidler</h3>
+					<p><strong>Enterprise Resilience · Design Strategy · Labor</strong></p>
+					<p>15+ years in enterprise resilience and risk management. Brought the design thinking, systems approach, and risk mitigation principles to the project. Contributed hands-on labor throughout the build. The "why" behind the design decisions and the "how" of resilient systems.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<!-- Who Should Come -->
 	<section class="who-section">
 		<div class="container">
@@ -204,22 +225,22 @@ import Layout from '../layouts/Layout.astro';
 
 			<div class="who-grid">
 				<div class="who-item">
-					<strong>Curious Builders</strong> — People designing their own home or project. You'll get real answers.
+					<strong>DIY Home Builders</strong> — Planning your own build and want to learn from someone who's actually managed the trades and timeline.
 				</div>
 				<div class="who-item">
-					<strong>Sustainability Advocates</strong> — Want to see alternative housing done right (and honestly).
+					<strong>General Contractors</strong> — Curious about alternative housing and how to manage unconventional projects.
 				</div>
 				<div class="who-item">
-					<strong>Remote Workers</strong> — Who want a workspace with a view and meaning.
+					<strong>Architects & Designers</strong> — Looking for real-world build management insights, not just theory.
 				</div>
 				<div class="who-item">
-					<strong>Architects & Designers</strong> — Looking for case studies and inspiration.
+					<strong>Project Managers</strong> — Wanting to understand how complex builds actually get executed.
 				</div>
 				<div class="who-item">
-					<strong>Community Seekers</strong> — Want connection with like-minded builders and thinkers.
+					<strong>Sustainability & Housing Advocates</strong> — Want to see alternative housing done right (and honestly).
 				</div>
 				<div class="who-item">
-					<strong>Learning Enthusiasts</strong> — Who see travel as education, not just relaxation.
+					<strong>Learning Travelers</strong> — Who see experiences as education and value hands-on knowledge.
 				</div>
 			</div>
 		</div>
@@ -558,6 +579,49 @@ import Layout from '../layouts/Layout.astro';
 
 	.pricing-card .btn {
 		align-self: flex-start;
+	}
+
+	/* Teaching Section */
+	.teaching-section {
+		padding: 5rem 0;
+		background: white;
+	}
+
+	.teaching-section h2 {
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+
+	.instructor-bios {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		gap: 3rem;
+	}
+
+	.instructor {
+		background: var(--color-warm);
+		padding: 2rem;
+		border-radius: 4px;
+		border-left: 4px solid var(--color-blue);
+	}
+
+	.instructor h3 {
+		color: var(--color-navy);
+		margin-bottom: 0.25rem;
+		font-size: 1.3rem;
+	}
+
+	.instructor p:nth-of-type(1) {
+		color: var(--color-blue);
+		font-size: 0.9rem;
+		font-weight: 600;
+		margin-bottom: 1rem;
+	}
+
+	.instructor p {
+		color: var(--color-muted);
+		line-height: 1.7;
+		font-size: 0.95rem;
 	}
 
 	/* Who Section */
