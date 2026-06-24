@@ -226,6 +226,33 @@ import Layout from '../layouts/Layout.astro';
 					</div>
 				</div>
 
+				<div class="honest-section">
+					<h3>The Honest Part</h3>
+					<div class="honest-grid">
+						<div class="honest-card good">
+							<h4>✓ The Good</h4>
+							<ul>
+								<li>Learn from actual systems and real decisions</li>
+								<li>No theory—just what actually works</li>
+								<li>Understand what we'd do differently and why</li>
+								<li>See a completed, lived-in home</li>
+								<li>Access to people who built it</li>
+							</ul>
+						</div>
+						<div class="honest-card challenge">
+							<h4>⚠️ The Realities</h4>
+							<ul>
+								<li>It's not a luxury project showcase</li>
+								<li>You're learning from our specific choices—yours may differ</li>
+								<li>Some systems are custom; not all are replicable</li>
+								<li>Better suited for curious learners than casual observers</li>
+								<li>4 hours is a deep dive, not a highlight reel</li>
+							</ul>
+						</div>
+					</div>
+					<p style="text-align: center; margin-top: 1.5rem; font-style: italic; color: var(--color-muted);">If you're looking for authentic knowledge and honest insights, this is for you. If you're looking for a polished marketing video, look elsewhere.</p>
+				</div>
+
 				<div class="instructors-section">
 					<h3>Who's Teaching</h3>
 					<div class="instructor-grid instructor-grid-3">
@@ -477,6 +504,73 @@ import Layout from '../layouts/Layout.astro';
 
 	.option-card .btn {
 		margin-top: 1.5rem;
+	}
+
+	.honest-section {
+		margin-top: 2rem;
+		padding: 2rem;
+		background: linear-gradient(135deg, rgba(44,82,130,0.05), rgba(235,244,255,0.3));
+		border-radius: 4px;
+	}
+
+	.honest-section h3 {
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+
+	.honest-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 2rem;
+	}
+
+	.honest-card {
+		background: white;
+		padding: 1.5rem;
+		border-radius: 4px;
+		border-left: 4px solid var(--color-blue);
+	}
+
+	.honest-card.good {
+		border-left-color: var(--color-blue);
+	}
+
+	.honest-card.challenge {
+		border-left-color: var(--color-rust);
+	}
+
+	.honest-card h4 {
+		color: var(--color-navy);
+		margin-bottom: 1rem;
+	}
+
+	.honest-card ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	.honest-card li {
+		padding: 0.5rem 0;
+		padding-left: 1.5rem;
+		position: relative;
+		color: var(--color-muted);
+		font-size: 0.9rem;
+	}
+
+	.honest-card li::before {
+		position: absolute;
+		left: 0;
+		font-weight: bold;
+	}
+
+	.honest-card.good li::before {
+		content: "✓";
+		color: var(--color-blue);
+	}
+
+	.honest-card.challenge li::before {
+		content: "•";
+		color: var(--color-rust);
 	}
 
 	.instructors-section {
