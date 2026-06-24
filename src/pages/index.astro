@@ -46,17 +46,57 @@ import Layout from '../layouts/Layout.astro';
 		</div>
 	</section>
 
-	<!-- Progress Gallery -->
+	<!-- Build Process -->
 	<section class="progress-section">
 		<div class="container">
-			<h2>The Project</h2>
-			<p>From concept to completion. Real photos of our shipping container home journey.</p>
+			<h2>The Build</h2>
+			<p>From design to delivery to foundation. Here's how it started.</p>
 
 			<div class="progress-gallery">
-				<!-- Placeholder for progress photos -->
-				<div class="gallery-placeholder">
-					<p>Progress photos coming soon...</p>
-				</div>
+				<img src="/images/Elevation 1.jpg" alt="Final design elevation" loading="lazy" />
+				<img src="/images/crane over lake.jpg" alt="Crane delivery over water" loading="lazy" />
+				<img src="/images/crane.jpg" alt="Crane placement on site" loading="lazy" />
+				<img src="/images/foundation.jpg" alt="Pier foundation detail" loading="lazy" />
+			</div>
+		</div>
+	</section>
+
+	<!-- Structural & Systems -->
+	<section class="progress-section">
+		<div class="container">
+			<h2>Structural & Systems</h2>
+			<p>Framing, welding, insulation, and MEP rough-in. Building it solid.</p>
+
+			<div class="progress-gallery">
+				<img src="/images/window framing and cutting.jpg" alt="Window framing and cutting work" loading="lazy" />
+				<img src="/images/windows and doors welding.jpg" alt="Welding windows and doors" loading="lazy" />
+				<img src="/images/interior metal framing.jpeg" alt="Interior metal framing" loading="lazy" />
+				<img src="/images/steel reinforcements.jpg" alt="Steel reinforcements" loading="lazy" />
+				<img src="/images/spray foam.jpeg" alt="Spray foam insulation" loading="lazy" />
+				<img src="/images/window fitting.jpg" alt="Window fitting installation" loading="lazy" />
+				<img src="/images/window insulation.jpeg" alt="Window insulation detail" loading="lazy" />
+				<img src="/images/20 ft window cut.jpg" alt="20ft container window cut" loading="lazy" />
+			</div>
+		</div>
+	</section>
+
+	<!-- Interiors & Finishes -->
+	<section class="progress-section">
+		<div class="container">
+			<h2>Interiors & Finishes</h2>
+			<p>Where the project comes to life. Kitchen, bath, flooring, deck, and details.</p>
+
+			<div class="progress-gallery">
+				<img src="/images/20ft interior wood.jpeg" alt="20ft interior wood detail" loading="lazy" />
+				<img src="/images/20ft interior wood2.jpeg" alt="20ft interior wood finish" loading="lazy" />
+				<img src="/images/flooring.jpeg" alt="Flooring installation" loading="lazy" />
+				<img src="/images/kitchen countertop.jpeg" alt="Kitchen countertop" loading="lazy" />
+				<img src="/images/kitchen cabinets.jpeg" alt="Kitchen cabinets" loading="lazy" />
+				<img src="/images/kitchen bathroom.jpeg" alt="Kitchen and bathroom layout" loading="lazy" />
+				<img src="/images/shower.jpeg" alt="Shower installation" loading="lazy" />
+				<img src="/images/deck.jpeg" alt="Deck construction" loading="lazy" />
+				<img src="/images/deck 2.jpeg" alt="Deck detail" loading="lazy" />
+				<img src="/images/car port.jpeg" alt="Carport detail" loading="lazy" />
 			</div>
 		</div>
 	</section>
@@ -250,14 +290,24 @@ import Layout from '../layouts/Layout.astro';
 	}
 
 	.progress-gallery {
-		background: white;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 1.5rem;
+		margin-top: 2rem;
+	}
+
+	.progress-gallery img {
+		width: 100%;
+		height: 300px;
+		object-fit: cover;
 		border-radius: 8px;
-		padding: 3rem;
-		text-align: center;
-		min-height: 300px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
+		display: block;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+		transition: transform 0.3s ease;
+	}
+
+	.progress-gallery img:hover {
+		transform: scale(1.05);
 	}
 
 	.gallery-placeholder {
