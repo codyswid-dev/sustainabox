@@ -65,8 +65,10 @@ import Layout from '../layouts/Layout.astro';
 				<button class="hero-indicator" data-slide="1" aria-label="Go to slide 2"></button>
 				<button class="hero-indicator" data-slide="2" aria-label="Go to slide 3"></button>
 				<button class="hero-indicator" data-slide="3" aria-label="Go to slide 4"></button>
-				<button class="hero-slider-pause" aria-label="Pause slideshow">⏸</button>
 			</div>
+
+			<!-- Pause Button -->
+			<button class="hero-slider-pause" aria-label="Pause slideshow">⏸</button>
 		</div>
 	</header>
 
@@ -383,8 +385,10 @@ import Layout from '../layouts/Layout.astro';
 
 	/* Pause Button */
 	.hero-slider-pause {
-		margin-left: 1.5rem;
-		padding: 0.5rem 1rem;
+		position: absolute;
+		bottom: 2rem;
+		right: 2rem;
+		padding: 0.6rem 1rem;
 		background: rgba(255,255,255,0.3);
 		color: white;
 		border: 1px solid rgba(255,255,255,0.5);
@@ -392,6 +396,7 @@ import Layout from '../layouts/Layout.astro';
 		cursor: pointer;
 		font-size: 1rem;
 		transition: all 0.3s;
+		z-index: 10;
 	}
 
 	.hero-slider-pause:hover {
