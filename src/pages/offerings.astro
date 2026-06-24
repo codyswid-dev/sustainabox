@@ -158,7 +158,15 @@ import Layout from '../layouts/Layout.astro';
 			<h2>The 4-Hour Walkthrough</h2>
 			<p>A recorded tour of the complete build. From foundation to finishes. Learn what works, what we'd do differently, and why.</p>
 
-			<div class="learning-overview">
+			<div class="course-teaser">
+				<div class="teaser-intro">
+					<p><strong>Learn everything:</strong> Foundation & site · Container modification · Electrical systems · Plumbing & water · Thermal & HVAC · Interiors & finishes</p>
+					<p>Choose your path: Video only ($49) or in-person stay with live walkthrough ($599–$799).</p>
+				</div>
+				<a href="/course" class="btn btn-primary">Explore Full Course Details</a>
+			</div>
+
+			<div class="learning-overview" style="display: none;">
 				<div class="learning-section">
 					<h3>What You'll Learn</h3>
 					<div class="topics-grid">
@@ -327,6 +335,28 @@ import Layout from '../layouts/Layout.astro';
 		color: var(--color-muted);
 		margin-bottom: 2rem;
 		font-size: 1.05rem;
+	}
+
+	.course-teaser {
+		background: var(--color-warm);
+		padding: 2rem;
+		border-radius: 4px;
+		border-left: 4px solid var(--color-blue);
+		text-align: center;
+	}
+
+	.teaser-intro {
+		margin-bottom: 1.5rem;
+	}
+
+	.teaser-intro p {
+		color: var(--color-muted);
+		line-height: 1.7;
+		margin-bottom: 1rem;
+	}
+
+	.teaser-intro p:first-child {
+		font-size: 0.95rem;
 	}
 
 	/* Consulting */
