@@ -219,12 +219,13 @@ import Layout from '../layouts/Layout.astro';
 	/* Hero Slider */
 	.hero-slider-section {
 		position: relative;
-		min-height: 70vh;
+		height: 70vh;
+		background: #1a2744;
 	}
 
 	.hero-slider {
 		position: relative;
-		min-height: 70vh;
+		height: 70vh;
 		overflow: hidden;
 	}
 
@@ -239,11 +240,12 @@ import Layout from '../layouts/Layout.astro';
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		z-index: 1;
 	}
 
 	.hero-slide.active {
 		opacity: 1;
-		position: relative;
+		z-index: 2;
 	}
 
 	.hero-overlay {
