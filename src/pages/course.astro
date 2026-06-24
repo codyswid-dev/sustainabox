@@ -93,7 +93,7 @@ import Layout from '../layouts/Layout.astro';
 
 		<h2 style="margin-top: 3rem;">Who's Teaching</h2>
 
-		<div class="instructor-grid">
+		<div class="instructor-grid instructor-grid-3">
 			<div class="instructor-card">
 				<img src="/images/jen-instructor.jpg" alt="Jen Swidler" class="instructor-photo" />
 				<h3>Jen Swidler</h3>
@@ -105,6 +105,12 @@ import Layout from '../layouts/Layout.astro';
 				<h3>Cody Swidler</h3>
 				<p class="role">Enterprise Resilience · Design Strategy</p>
 				<p>15+ years in enterprise resilience and risk management. Brought the design thinking, systems approach, and risk mitigation to the project. Contributed hands-on labor throughout the build. The "why" behind the design decisions and the "how" of resilient systems.</p>
+			</div>
+			<div class="instructor-card">
+				<img src="/images/skye-with-container.jpg" alt="Skye" class="instructor-photo" />
+				<h3>Skye</h3>
+				<p class="role">Design · Labor · Content Creator</p>
+				<p>Contributed design work and hands-on labor throughout the project. Content creator for Travel365 and more. Brings the storytelling and visual perspective to how the build comes alive. The bridge between the technical execution and the lived experience.</p>
 			</div>
 		</div>
 
@@ -287,6 +293,10 @@ import Layout from '../layouts/Layout.astro';
 		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 		gap: 2rem;
 		margin: 2rem 0;
+	}
+
+	.instructor-grid-3 {
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	}
 
 	.instructor-card {

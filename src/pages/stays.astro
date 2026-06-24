@@ -201,7 +201,7 @@ import Layout from '../layouts/Layout.astro';
 		<div class="container">
 			<h2>Who You're Learning From</h2>
 
-			<div class="instructor-bios">
+			<div class="instructor-bios instructor-bios-3">
 				<div class="instructor">
 					<h3>Jen Swidler</h3>
 					<p><strong>General Contractor · Project Manager · Builder</strong></p>
@@ -212,6 +212,12 @@ import Layout from '../layouts/Layout.astro';
 					<h3>Cody Swidler</h3>
 					<p><strong>Enterprise Resilience · Design Strategy · Labor</strong></p>
 					<p>15+ years in enterprise resilience and risk management. Brought the design thinking, systems approach, and risk mitigation principles to the project. Contributed hands-on labor throughout the build. The "why" behind the design decisions and the "how" of resilient systems.</p>
+				</div>
+
+				<div class="instructor">
+					<h3>Skye</h3>
+					<p><strong>Design · Labor · Content Creator</strong></p>
+					<p>Contributed design work and hands-on labor throughout the project. Content creator for Travel365 and more. Brings the storytelling and visual perspective to how the build comes alive. The bridge between technical execution and lived experience.</p>
 				</div>
 			</div>
 		</div>
@@ -596,6 +602,10 @@ import Layout from '../layouts/Layout.astro';
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 		gap: 3rem;
+	}
+
+	.instructor-bios-3 {
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	}
 
 	.instructor {
