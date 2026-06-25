@@ -50,25 +50,12 @@ import Layout from '../layouts/Layout.astro';
 				<div class="booking-divider"></div>
 
 				<h3>Get in Touch</h3>
-				<p>To check availability and book your stay, please reach out:</p>
+				<p>To check availability and book your stay, reach out to the Sustainabox team:</p>
 
-				<div class="contact-links">
-					<div class="contact-card">
-						<h4>Jen Swidler</h4>
-						<p class="role">Host & Homebuilding Expert</p>
-						<p>7 years of homebuilding and project management</p>
-						<a href="mailto:jenswid@gmail.com" class="btn btn-primary">Email Jen</a>
-					</div>
+				<a href="mailto:jenswid@gmail.com,codyswid@gmail.com?subject=Sustainabox%20Stay%20Inquiry" class="btn btn-primary" style="display: inline-block; margin: 1.5rem 0;">Request Your Stay</a>
 
-					<div class="contact-card">
-						<h4>Cody Swidler</h4>
-						<p class="role">Host & Resilience Design</p>
-						<p>15+ years enterprise resilience and systems design</p>
-						<a href="mailto:codyswid@gmail.com" class="btn btn-primary">Email Cody</a>
-					</div>
-				</div>
-
-				<p style="margin-top: 2rem; font-size: 0.9rem; color: var(--color-muted);">We typically respond within 24 hours. Include your preferred dates and number of guests.</p>
+				<p style="font-size: 0.9rem; color: var(--color-muted);">Include your preferred dates and number of guests. We typically respond within 24 hours.</p>
+				<p style="font-size: 0.85rem; color: var(--color-muted); margin-top: 1rem;"><em>Coming soon: hello@sustainabox.org</em></p>
 
 				<div class="booking-divider" style="margin: 2rem 0;"></div>
 
@@ -171,44 +158,7 @@ import Layout from '../layouts/Layout.astro';
 		margin: 2rem 0;
 	}
 
-	.contact-links {
-		display: flex;
-		flex-direction: column;
-		gap: 1.5rem;
-		margin-top: 1.5rem;
-	}
-
-	.contact-card {
-		background: var(--color-warm);
-		padding: 1.75rem;
-		border-radius: 4px;
-		border-left: 3px solid var(--color-blue);
-	}
-
-	.contact-card h4 {
-		color: var(--color-navy);
-		margin-bottom: 0.25rem;
-		font-size: 1.1rem;
-	}
-
-	.contact-card .role {
-		color: var(--color-blue);
-		font-size: 0.9rem;
-		font-weight: 600;
-		margin-bottom: 0.5rem;
-	}
-
-	.contact-card p {
-		font-size: 0.9rem;
-		color: var(--color-muted);
-		margin-bottom: 1rem;
-	}
-
-	.contact-card .btn {
-		display: inline-block;
-	}
-
-	.booking-preview {
+.booking-preview {
 		position: sticky;
 		top: 100px;
 		height: fit-content;
