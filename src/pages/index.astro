@@ -129,6 +129,7 @@ import Layout from '../layouts/Layout.astro';
 				<h2>750 square feet of intention. 1,280 of open air.</h2>
 			</div>
 			<div class="photo-grid">
+				<figure class="photo photo-feature"><img src="/images/IMG_20251126_142830.jpg" alt="Sustainabox property in the Texas Hill Country" loading="lazy" /></figure>
 				<figure class="photo photo-wide"><img src="/images/deck%202.jpeg" alt="Outdoor deck and living space" loading="lazy" /></figure>
 				<figure class="photo"><img src="/images/Interior-1.jpg" alt="Main living interior" loading="lazy" /></figure>
 				<figure class="photo"><img src="/images/Interior-Kitchen-Container-1.jpg" alt="Kitchen container" loading="lazy" /></figure>
@@ -876,6 +877,11 @@ import Layout from '../layouts/Layout.astro';
 
 	.photo-wide {
 		grid-column: span 2;
+	}
+
+	.photo-feature {
+		grid-column: 1 / -1;
+		grid-row: span 2;
 	}
 
 	.photo img {
