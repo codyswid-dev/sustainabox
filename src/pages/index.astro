@@ -170,38 +170,31 @@ import Layout from '../layouts/Layout.astro';
 	<!-- Design Principles -->
 	<section class="design-principles-section">
 		<div class="container">
-			<h2>Design Principles</h2>
-			<p>Every system reflects our approach to resilience, sustainability, and intentional living.</p>
+			<div class="principles-layout">
+				<div class="principles-image">
+					<img src="/images/Interior-3.jpg" alt="Sustainabox interior — purposeful, efficient design" />
+				</div>
+				<div class="principles-text">
+					<h2>Design Principles</h2>
+					<p class="principles-intro">Every system reflects our approach to resilience, sustainability, and intentional living.</p>
 
-			<div class="principles-list">
-				<div class="principle-item">
-					<h3>Tiny</h3>
-					<p>Efficient, purposeful living. No wasted space. Everything has a reason. Maximum comfort in minimal footprint.</p>
+					<div class="principle-item">
+						<h3>Tiny</h3>
+						<p>Efficient, purposeful living. No wasted space. Maximum comfort in minimal footprint.</p>
+					</div>
+					<div class="principle-item">
+						<h3>Sustainable</h3>
+						<p>Grid-connected with resilience principles built in. Designed for durability and adaptability.</p>
+					</div>
+					<div class="principle-item">
+						<h3>Simple</h3>
+						<p>Straightforward systems. No unnecessary complexity. Easy to maintain and understand.</p>
+					</div>
+					<div class="principle-item">
+						<h3>Mobile</h3>
+						<p>The 20-foot container sits on a trailer. Built for flexibility, travel, and exploration.</p>
+					</div>
 				</div>
-				<div class="principle-item">
-					<h3>Sustainable</h3>
-					<p>Grid-connected with resilience principles built in. Low impact on the environment. Designed for durability and adaptability in an uncertain world.</p>
-				</div>
-				<div class="principle-item">
-					<h3>Simple</h3>
-					<p>Straightforward systems. No unnecessary complexity. Easy to maintain, repair, and understand. Elegant in its simplicity.</p>
-				</div>
-				<div class="principle-item">
-					<h3>Mobile</h3>
-					<p>The 20-foot container sits on a trailer. Your home can go where you go. Built for flexibility, travel, and exploration.</p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- CTA Section -->
-	<section class="cta-section" id="contact">
-		<div class="container">
-			<h2>What's Your Next Move?</h2>
-			<p>Ready to explore sustainable living? Reach out and let's talk.</p>
-			<div class="cta-buttons">
-				<a href="/consulting" class="btn btn-primary">Schedule Consulting</a>
-				<a href="/contact" class="btn btn-outline">Get in Touch</a>
 			</div>
 		</div>
 	</section>
@@ -418,30 +411,53 @@ import Layout from '../layouts/Layout.astro';
 		margin-right: auto;
 	}
 
-	.principles-list {
+	.principles-layout {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-		gap: 3rem 2rem;
-		max-width: 1000px;
-		margin: 0 auto;
+		grid-template-columns: 1fr 1fr;
+		gap: 4rem;
+		align-items: center;
+	}
+
+	.principles-image img {
+		width: 100%;
+		height: 100%;
+		max-height: 520px;
+		object-fit: cover;
+		border-radius: 4px;
+	}
+
+	.principles-text h2 {
+		text-align: left;
+		margin-bottom: 0.75rem;
+	}
+
+	.principles-intro {
+		text-align: left !important;
+		margin: 0 0 2rem 0 !important;
+		max-width: none !important;
 	}
 
 	.principle-item {
-		padding-bottom: 1.5rem;
-		border-bottom: 2px solid #e2e8f0;
+		padding: 1rem 0;
+		border-bottom: 1px solid #e2e8f0;
+	}
+
+	.principle-item:last-child {
+		border-bottom: none;
 	}
 
 	.principle-item h3 {
 		color: var(--color-navy);
-		margin-bottom: 0.75rem;
-		font-size: 1.2rem;
+		margin-bottom: 0.4rem;
+		font-size: 1.1rem;
 		font-weight: 600;
 	}
 
 	.principle-item p {
 		color: var(--color-muted);
 		font-size: 0.95rem;
-		line-height: 1.7;
+		line-height: 1.6;
+		margin: 0;
 	}
 
 	/* Progress Section */
@@ -556,41 +572,6 @@ import Layout from '../layouts/Layout.astro';
 		align-self: flex-start;
 		margin-top: auto;
 		font-size: 0.85rem;
-	}
-
-	/* CTA Section */
-	.cta-section {
-		padding: 5rem 0;
-		background: var(--color-navy);
-		color: white;
-		text-align: center;
-	}
-
-	.cta-section h2 {
-		color: white;
-		margin-bottom: 1rem;
-	}
-
-	.cta-section p {
-		font-size: 1.1rem;
-		margin-bottom: 2rem;
-		opacity: 0.9;
-	}
-
-	.cta-buttons {
-		display: flex;
-		gap: 1rem;
-		justify-content: center;
-		flex-wrap: wrap;
-	}
-
-	.cta-section .btn-primary {
-		background: white;
-		color: var(--color-navy);
-	}
-
-	.cta-section .btn-primary:hover {
-		background: var(--color-sky);
 	}
 
 	/* Carousel/Slider */
@@ -842,20 +823,17 @@ import Layout from '../layouts/Layout.astro';
 			grid-template-columns: repeat(2, 1fr);
 		}
 
-		.principles-list {
-			grid-template-columns: 1fr;
-		}
-
 		.offerings-grid {
 			grid-template-columns: 1fr;
 		}
 
-		.cta-buttons {
-			flex-direction: column;
+		.principles-layout {
+			grid-template-columns: 1fr;
+			gap: 2rem;
 		}
 
-		.cta-buttons .btn {
-			width: 100%;
+		.principles-image {
+			order: -1;
 		}
 
 		.carousel-wrapper {
