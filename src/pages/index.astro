@@ -523,70 +523,53 @@ import Layout from '../layouts/Layout.astro';
 
 	.offerings-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-		gap: 2.5rem;
+		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+		gap: 3rem 2rem;
 	}
 
 	.offering-card {
 		background: white;
-		padding: 2.5rem;
-		border-radius: 10px;
-		border: 1px solid #e5e7eb;
+		padding: 2rem;
+		border-radius: 0px;
+		border: none;
+		border-left: 3px solid var(--color-blue);
 		display: flex;
 		flex-direction: column;
-		transition: all 0.3s ease;
-		box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+		transition: none;
+		box-shadow: none;
 		position: relative;
-		overflow: hidden;
-	}
-
-	.offering-card::before {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		height: 4px;
-		background: linear-gradient(90deg, var(--color-blue), var(--color-sky));
-		transform: scaleX(0);
-		transform-origin: left;
-		transition: transform 0.4s ease;
 	}
 
 	.offering-card:hover {
-		transform: translateY(-8px);
-		box-shadow: 0 16px 32px rgba(44,82,130,0.2);
-		border-color: var(--color-blue);
-	}
-
-	.offering-card:hover::before {
-		transform: scaleX(1);
+		transform: none;
+		box-shadow: none;
+		border-left-color: var(--color-navy);
 	}
 
 	.offering-icon {
-		font-size: 3.5rem;
-		margin-bottom: 1.5rem;
-		filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+		display: none;
 	}
 
 	.offering-card h3 {
 		color: var(--color-navy);
-		margin-bottom: 1rem;
-		font-size: 1.3rem;
+		margin-bottom: 0.75rem;
+		font-size: 1.15rem;
 		font-weight: 600;
+		letter-spacing: 0.3px;
 	}
 
 	.offering-card p {
-		font-size: 0.95rem;
+		font-size: 0.9rem;
 		color: var(--color-muted);
-		margin-bottom: 1.75rem;
+		margin-bottom: 1.5rem;
 		flex-grow: 1;
-		line-height: 1.7;
+		line-height: 1.6;
 	}
 
 	.offering-card .btn {
 		align-self: flex-start;
 		margin-top: auto;
+		font-size: 0.85rem;
 	}
 
 	/* CTA Section */
