@@ -163,7 +163,7 @@ import Layout from '../layouts/Layout.astro';
 						<li>Educational materials</li>
 						<li>Community membership</li>
 					</ul>
-					<a href="https://www.airbnb.com/your-listing" class="btn btn-outline" target="_blank">View on Airbnb</a>
+					<a href="/book" class="btn btn-primary">Book Now</a>
 				</div>
 
 				<div class="pricing-card featured">
@@ -220,6 +220,44 @@ import Layout from '../layouts/Layout.astro';
 					<p>Contributed design work and hands-on labor throughout the project. Content creator for Travel365 and more. Brings the storytelling and visual perspective to how the build comes alive. The bridge between technical execution and lived experience.</p>
 				</div>
 			</div>
+		</div>
+	</section>
+
+	<!-- Walkthrough Options -->
+	<section class="walkthrough-options">
+		<div class="container">
+			<h2>Your Learning Experience</h2>
+			<p>Every stay includes access to our 4-hour walkthrough. You'll choose how you experience it:</p>
+
+			<div class="options-grid">
+				<div class="option-card">
+					<h3>In-Person Walkthrough</h3>
+					<p><strong>Saturday morning</strong></p>
+					<ul>
+						<li>Expert-led tour of all systems</li>
+						<li>Real-time Q&A with builders</li>
+						<li>Design decisions explained</li>
+						<li>See actual materials & methods</li>
+					</ul>
+					<p style="margin-top: 1.5rem; font-weight: 600; color: var(--color-blue);">Included with stay</p>
+				</div>
+
+				<div class="option-card">
+					<h3>Video Walkthrough</h3>
+					<p><strong>Anytime during your stay</strong></p>
+					<ul>
+						<li>4-hour recorded tour (projector provided)</li>
+						<li>Watch at your own pace</li>
+						<li>Fridge stocked with drinks & snacks</li>
+						<li>Same expert knowledge, flexible timing</li>
+					</ul>
+					<p style="margin-top: 1.5rem; font-weight: 600; color: var(--color-blue);">$150 discount applied</p>
+				</div>
+			</div>
+
+			<p style="margin-top: 2rem; font-size: 0.95rem; color: var(--color-muted); text-align: center;">
+				<em>Video option available when we're traveling. Either way, you'll get the same expert knowledge and real insights into the build.</em>
+			</p>
 		</div>
 	</section>
 
@@ -651,6 +689,75 @@ import Layout from '../layouts/Layout.astro';
 		color: var(--color-muted);
 		line-height: 1.7;
 		font-size: 0.95rem;
+	}
+
+	/* Walkthrough Options */
+	.walkthrough-options {
+		padding: 5rem 0;
+		background: white;
+	}
+
+	.walkthrough-options h2 {
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+
+	.walkthrough-options > .container > p {
+		text-align: center;
+		color: var(--color-muted);
+		margin-bottom: 3rem;
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.options-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+		gap: 2.5rem;
+		margin-bottom: 2rem;
+	}
+
+	.option-card {
+		background: white;
+		padding: 2rem;
+		border: 1px solid #e2e8f0;
+		border-left: 3px solid var(--color-blue);
+		border-radius: 4px;
+	}
+
+	.option-card h3 {
+		color: var(--color-navy);
+		margin-bottom: 0.5rem;
+		font-size: 1.2rem;
+	}
+
+	.option-card > p:first-of-type {
+		color: var(--color-blue);
+		font-weight: 600;
+		font-size: 0.9rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.option-card ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	.option-card li {
+		padding: 0.5rem 0;
+		padding-left: 1.5rem;
+		position: relative;
+		color: var(--color-muted);
+		font-size: 0.9rem;
+	}
+
+	.option-card li::before {
+		content: "✓";
+		position: absolute;
+		left: 0;
+		color: var(--color-blue);
+		font-weight: bold;
 	}
 
 	/* Course CTA Section */
