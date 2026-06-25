@@ -338,25 +338,49 @@ import Layout from '../layouts/Layout.astro';
 	}
 
 	.course-teaser {
-		background: var(--color-warm);
-		padding: 2rem;
-		border-radius: 4px;
-		border-left: 4px solid var(--color-blue);
+		background: linear-gradient(135deg, var(--color-navy) 0%, rgba(44,82,130,0.8) 100%);
+		padding: 3.5rem 3rem;
+		border-radius: 12px;
 		text-align: center;
+		box-shadow: 0 12px 40px rgba(44,82,130,0.25);
+		color: white;
+		margin-top: 2rem;
 	}
 
-	.teaser-intro {
-		margin-bottom: 1.5rem;
-	}
-
-	.teaser-intro p {
-		color: var(--color-muted);
-		line-height: 1.7;
+	.course-teaser h2 {
+		color: white;
+		font-size: 2.2rem;
 		margin-bottom: 1rem;
 	}
 
+	.teaser-intro {
+		margin-bottom: 2rem;
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.teaser-intro p {
+		color: rgba(255,255,255,0.9);
+		line-height: 1.8;
+		margin-bottom: 1.25rem;
+		font-size: 1rem;
+	}
+
 	.teaser-intro p:first-child {
-		font-size: 0.95rem;
+		font-weight: 500;
+		color: white;
+	}
+
+	.course-teaser .btn {
+		background: white;
+		color: var(--color-navy);
+		font-weight: 600;
+		padding: 0.8rem 2rem;
+	}
+
+	.course-teaser .btn:hover {
+		background: rgba(255,255,255,0.95);
 	}
 
 	/* Consulting */
@@ -368,30 +392,48 @@ import Layout from '../layouts/Layout.astro';
 	}
 
 	.consulting-card {
-		background: var(--color-warm);
-		padding: 2rem;
-		border-radius: 4px;
-		border-left: 4px solid var(--color-blue);
+		background: white;
+		padding: 3rem 2.5rem;
+		border-radius: 8px;
+		border: 1px solid #e5e7eb;
+		border-top: 4px solid var(--color-blue);
 		display: flex;
 		flex-direction: column;
+		transition: all 0.3s;
+		box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+	}
+
+	.consulting-card:hover {
+		transform: translateY(-6px);
+		box-shadow: 0 16px 32px rgba(0,0,0,0.1);
+		border-top-color: var(--color-navy);
 	}
 
 	.consulting-card h3 {
 		color: var(--color-navy);
-		margin-bottom: 0.5rem;
+		margin-bottom: 1rem;
+		font-size: 1.2rem;
 	}
 
 	.consulting-card .price {
-		font-size: 1.2rem;
-		font-weight: 600;
+		font-size: 1.6rem;
+		font-weight: 700;
 		color: var(--color-blue);
-		margin-bottom: 1rem;
+		margin-bottom: 0.5rem;
+		line-height: 1.2;
+	}
+
+	.consulting-card > p:not(.deliverable) {
+		color: var(--color-muted);
+		font-size: 0.9rem;
+		margin-bottom: 1.5rem;
 	}
 
 	.consulting-card ul {
 		list-style: none;
 		padding: 0;
-		margin: 1rem 0;
+		margin: 1rem 0 1.5rem 0;
+		flex-grow: 1;
 	}
 
 	.consulting-card li {
@@ -399,6 +441,7 @@ import Layout from '../layouts/Layout.astro';
 		padding-left: 1.5rem;
 		position: relative;
 		color: var(--color-muted);
+		font-size: 0.9rem;
 	}
 
 	.consulting-card li::before {
@@ -412,12 +455,15 @@ import Layout from '../layouts/Layout.astro';
 	.consulting-card .deliverable {
 		margin-top: auto;
 		padding-top: 1rem;
-		font-size: 0.9rem;
+		border-top: 1px solid #e5e7eb;
+		font-size: 0.85rem;
 		color: var(--color-text);
 	}
 
 	.consulting-card .btn {
-		margin-top: 1rem;
+		margin-top: 1.5rem;
+		width: 100%;
+		text-align: center;
 	}
 
 	.why-consulting {
@@ -434,19 +480,34 @@ import Layout from '../layouts/Layout.astro';
 
 	.why-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-		gap: 1.5rem;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 2.5rem;
+	}
+
+	.why-item {
+		padding: 2rem;
+		background: linear-gradient(135deg, rgba(44,82,130,0.08), rgba(235,244,255,0.3));
+		border-radius: 8px;
+		border: 1px solid rgba(44,82,130,0.15);
+		transition: all 0.3s;
+	}
+
+	.why-item:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 12px 24px rgba(44,82,130,0.12);
+		background: linear-gradient(135deg, rgba(44,82,130,0.12), rgba(235,244,255,0.4));
 	}
 
 	.why-item h4 {
-		color: var(--color-blue);
-		margin-bottom: 0.5rem;
+		color: var(--color-navy);
+		margin-bottom: 1rem;
+		font-size: 1.2rem;
 	}
 
 	.why-item p {
 		color: var(--color-muted);
 		font-size: 0.95rem;
-		line-height: 1.6;
+		line-height: 1.7;
 	}
 
 	/* Learning */
@@ -660,55 +721,91 @@ import Layout from '../layouts/Layout.astro';
 	/* Products */
 	.products-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-		gap: 2rem;
+		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+		gap: 2.5rem;
 	}
 
 	.product-card {
-		background: var(--color-warm);
-		padding: 2rem;
-		border-radius: 4px;
-		border-left: 4px solid var(--color-blue);
+		background: white;
+		padding: 2.5rem;
+		border-radius: 8px;
+		border: 1px solid #e5e7eb;
 		display: flex;
 		flex-direction: column;
+		transition: all 0.3s;
+		box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+	}
+
+	.product-card:hover {
+		transform: translateY(-6px);
+		box-shadow: 0 16px 32px rgba(0,0,0,0.1);
+		border-color: var(--color-blue);
 	}
 
 	.product-card.bundle {
-		border-left-color: var(--color-rust);
-		background: linear-gradient(135deg, var(--color-warm), rgba(192, 86, 33, 0.05));
+		background: linear-gradient(135deg, rgba(44,82,130,0.08), rgba(235,244,255,0.2));
+		border: 2px solid var(--color-blue);
+		transform: scale(1.02);
+		box-shadow: 0 8px 24px rgba(44,82,130,0.15);
+	}
+
+	.product-card.bundle:hover {
+		transform: scale(1.02) translateY(-6px);
+		box-shadow: 0 20px 40px rgba(44,82,130,0.2);
+	}
+
+	.product-card.bundle::before {
+		content: "★ BEST VALUE ★";
+		display: block;
+		text-align: center;
+		color: var(--color-rust);
+		font-weight: 700;
+		font-size: 0.75rem;
+		letter-spacing: 1px;
+		margin-bottom: 1rem;
 	}
 
 	.product-card h3 {
 		color: var(--color-navy);
-		margin-bottom: 0.5rem;
+		margin-bottom: 0.75rem;
+		font-size: 1.35rem;
 	}
 
 	.product-card .price {
-		font-size: 1.2rem;
-		font-weight: 600;
+		font-size: 2rem;
+		font-weight: 700;
 		color: var(--color-blue);
-		margin-bottom: 0.5rem;
+		margin-bottom: 0.25rem;
 	}
 
 	.product-card .savings {
 		color: var(--color-rust);
-		font-size: 0.9rem;
+		font-size: 0.85rem;
 		font-weight: 600;
+		margin-bottom: 1rem;
+		display: block;
+	}
+
+	.product-card > p:not(.price) {
+		color: var(--color-text);
+		margin-bottom: 1.5rem;
+		line-height: 1.6;
 	}
 
 	.product-card ul {
 		list-style: none;
 		padding: 0;
-		margin: 1rem 0;
+		margin: 0 0 1.5rem 0;
 		flex-grow: 1;
 	}
 
 	.product-card li {
-		padding: 0.4rem 0;
-		padding-left: 1.5rem;
+		padding: 0.5rem 0;
+		padding-left: 1.75rem;
 		position: relative;
 		color: var(--color-muted);
-		font-size: 0.95rem;
+		font-size: 0.9rem;
+		line-height: 1.5;
 	}
 
 	.product-card li::before {
@@ -717,10 +814,13 @@ import Layout from '../layouts/Layout.astro';
 		left: 0;
 		color: var(--color-blue);
 		font-weight: bold;
+		font-size: 1.1rem;
 	}
 
 	.product-card .btn {
-		margin-top: 1.5rem;
+		margin-top: auto;
+		width: 100%;
+		text-align: center;
 	}
 
 	/* Final CTA */
