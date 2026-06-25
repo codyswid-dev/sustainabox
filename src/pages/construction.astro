@@ -5,13 +5,11 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="Sustainabox — The Container Home Build">
 
 	<!-- Hero -->
-	<header class="hero">
-		<div class="hero-overlay">
-			<div class="hero-content">
-				<h1>Sustainabox</h1>
-				<p class="hero-tagline">Aim Higher</p>
-				<p class="hero-sub">We're building more than a house. This is our journey into sustainable living, mobile freedom, and hands-on learning.</p>
-			</div>
+	<header class="page-hero" style="background-image: url('/images/crane over lake.jpg');">
+		<div class="page-hero-inner">
+			<span class="eyebrow">Building the Box</span>
+			<h1>The Build, Documented</h1>
+			<p>From raw land to finished home — the drawings, systems, and decisions behind Sustainabox.</p>
 		</div>
 	</header>
 
@@ -315,51 +313,6 @@ import Layout from '../layouts/Layout.astro';
 </Layout>
 
 <style>
-	/* Hero */
-	.hero {
-		background: url('/images/PXL_20260513_152354256~2.jpg.jpeg') center/cover no-repeat;
-		min-height: 70vh;
-		position: relative;
-	}
-
-	.hero-overlay {
-		background: linear-gradient(135deg, rgba(26,39,68,0.85), rgba(44,82,130,0.7));
-		min-height: 70vh;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-
-	.hero-content {
-		text-align: center;
-		color: white;
-		padding: 2rem;
-		max-width: 700px;
-	}
-
-	.hero h1 {
-		font-size: 3.5rem;
-		font-weight: 700;
-		margin-bottom: 0.25rem;
-		line-height: 1.1;
-	}
-
-	.hero-tagline {
-		font-family: var(--font-heading);
-		font-size: 1.3rem;
-		font-weight: 400;
-		opacity: 0.95;
-		margin-bottom: 1rem;
-		font-style: italic;
-	}
-
-	.hero-sub {
-		font-size: 1.1rem;
-		line-height: 1.8;
-		opacity: 0.9;
-		margin-bottom: 2rem;
-	}
-
 	/* Container cards */
 	.container-grid {
 		display: grid;
@@ -624,14 +577,6 @@ import Layout from '../layouts/Layout.astro';
 
 	/* Mobile */
 	@media (max-width: 768px) {
-		.hero h1 {
-			font-size: 2.2rem;
-		}
-
-		.hero-tagline {
-			font-size: 1rem;
-		}
-
 		.container-grid {
 			grid-template-columns: 1fr;
 		}

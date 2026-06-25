@@ -160,6 +160,106 @@ const { title, description = "Premium Airbnb stays with 4-hour expert walkthroug
 		color: var(--color-sky);
 	}
 
+	/* ===== Shared editorial system ===== */
+	/* Uppercase label that sits above headings */
+	.eyebrow {
+		display: inline-block;
+		font-family: var(--font-body);
+		font-size: 0.78rem;
+		font-weight: 600;
+		letter-spacing: 0.2em;
+		text-transform: uppercase;
+		color: var(--color-blue);
+		margin-bottom: 1rem;
+	}
+
+	.eyebrow-light {
+		color: rgba(255,255,255,0.7);
+	}
+
+	/* Centered intro for a section */
+	.section-head {
+		max-width: 720px;
+		margin: 0 auto 3.5rem;
+		text-align: center;
+	}
+
+	.section-head h2 {
+		font-size: 2.3rem;
+		line-height: 1.15;
+	}
+
+	.section-head p {
+		color: var(--color-muted);
+		font-size: 1.1rem;
+		margin: 1rem auto 0;
+		max-width: 560px;
+	}
+
+	/* Unified interior page hero — used on every page except the homepage */
+	.page-hero {
+		position: relative;
+		min-height: 42vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		background-size: cover;
+		background-position: center;
+		background-color: var(--color-navy);
+		overflow: hidden;
+	}
+
+	.page-hero::before {
+		content: "";
+		position: absolute;
+		inset: 0;
+		background: linear-gradient(180deg, rgba(15,23,42,0.55), rgba(15,23,42,0.7));
+	}
+
+	.page-hero .page-hero-inner {
+		position: relative;
+		z-index: 1;
+		max-width: 760px;
+		padding: 4rem 1.5rem;
+		color: white;
+	}
+
+	.page-hero .eyebrow {
+		color: rgba(255,255,255,0.85);
+		border-bottom: 1px solid rgba(255,255,255,0.4);
+		padding-bottom: 0.5rem;
+	}
+
+	.page-hero h1 {
+		color: white;
+		font-size: 3rem;
+		line-height: 1.1;
+		margin-bottom: 1rem;
+	}
+
+	.page-hero p {
+		color: rgba(255,255,255,0.92);
+		font-size: 1.15rem;
+		line-height: 1.7;
+		max-width: 600px;
+		margin: 0 auto;
+	}
+
+	@media (max-width: 768px) {
+		.page-hero h1 {
+			font-size: 2.1rem;
+		}
+
+		.page-hero p {
+			font-size: 1rem;
+		}
+
+		.section-head h2 {
+			font-size: 1.8rem;
+		}
+	}
+
 	/* Navigation */
 	.nav {
 		position: sticky;

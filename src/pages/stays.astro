@@ -5,14 +5,12 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="Stay & Learn — Sustainabox" description="Premium Airbnb weekend experience with 4-hour expert walkthrough. Book your stay and learn container home design from experienced builders. $599-$799 including accommodation and instruction.">
 
 	<!-- Hero -->
-	<header class="hero-stays">
-		<div class="hero-overlay">
-			<div class="hero-content">
-				<h1>Stay & Learn</h1>
-				<p class="hero-tagline">Experience Resilient Living</p>
-				<p class="hero-sub">A weekend at Sustainabox isn't a vacation. It's an education. Sleep in a shipping container home. Learn how it was built. Understand what sustainable really means.</p>
-				<a href="#booking" class="btn btn-primary">Check Availability</a>
-			</div>
+	<header class="page-hero" style="background-image: url('/images/PXL_20260513_152354256~2.jpg.jpeg');">
+		<div class="page-hero-inner">
+			<span class="eyebrow">Stay &amp; Learn</span>
+			<h1>A Weekend That Teaches</h1>
+			<p>Sleep in a shipping container home, learn how it was built, and understand what resilient design really means.</p>
+			<a href="#booking" class="btn btn-white" style="margin-top: 1.75rem;">Check Availability</a>
 		</div>
 	</header>
 
@@ -324,53 +322,6 @@ import Layout from '../layouts/Layout.astro';
 </Layout>
 
 <style>
-	.hero-stays {
-		background: url('/images/PXL_20260513_152354256~2.jpg.jpeg') center/cover no-repeat;
-		min-height: 70vh;
-		position: relative;
-	}
-
-	.hero-overlay {
-		background: linear-gradient(135deg, rgba(26,39,68,0.85), rgba(44,82,130,0.7));
-		min-height: 70vh;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-
-	.hero-content {
-		text-align: center;
-		color: white;
-		padding: 2rem;
-		max-width: 700px;
-	}
-
-	.hero-stays h1 {
-		font-size: 3.5rem;
-		font-weight: 700;
-		margin-bottom: 0.25rem;
-		line-height: 1.1;
-		color: white;
-	}
-
-	.hero-tagline {
-		font-family: var(--font-heading);
-		font-size: 1.3rem;
-		font-weight: 400;
-		opacity: 0.95;
-		margin-bottom: 1rem;
-		font-style: italic;
-		color: white;
-	}
-
-	.hero-sub {
-		font-size: 1.1rem;
-		line-height: 1.8;
-		opacity: 0.9;
-		margin-bottom: 2rem;
-		color: white;
-	}
-
 	/* Experience Section */
 	.experience-section {
 		padding: 5rem 0;
@@ -884,10 +835,6 @@ import Layout from '../layouts/Layout.astro';
 
 	/* Mobile */
 	@media (max-width: 768px) {
-		.hero-stays h1 {
-			font-size: 2.2rem;
-		}
-
 		.pricing-card.featured {
 			transform: scale(1);
 		}
