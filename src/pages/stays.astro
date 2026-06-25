@@ -17,33 +17,34 @@ import Layout from '../layouts/Layout.astro';
 	<!-- The Experience -->
 	<section class="experience-section">
 		<div class="container">
-			<h2>What You're Getting</h2>
-			<p>Not your typical Airbnb. This is a chance to step inside alternative living and understand it from the ground up.</p>
+			<span class="eyebrow">What You're Getting</span>
+			<h2>Not Your Typical Airbnb</h2>
+			<p>A chance to step inside alternative living and understand it from the ground up.</p>
 
 			<div class="experience-grid">
 				<div class="exp-card">
-					<h3>🏠 Authentic Container Home</h3>
+					<h3>Authentic Container Home</h3>
 					<p>Sleep in a real, lived-in shipping container home. No gimmicks. You're experiencing actual sustainable design—the good, the bad, the real.</p>
 				</div>
 				<div class="exp-card">
-					<h3>🛠️ 4-Hour Building Walkthrough</h3>
+					<h3>4-Hour Building Walkthrough</h3>
 					<p>Private tour + detailed explanation of every system. From foundation to plumbing to electrical. Learn what works, what we'd do differently, and why.</p>
 				</div>
 				<div class="exp-card">
-					<h3>🌍 Resilience By Design</h3>
-					<p>Built WITH off-grid principles but connected to utilities (water, septic, electric, cell internet). Smart efficient design + modern comfort = no roughing it.</p>
+					<h3>Resilience By Design</h3>
+					<p>Grid-connected (water, septic, electric, cell internet) with resilience principles built in. Smart, efficient design plus modern comfort—no roughing it.</p>
 				</div>
 				<div class="exp-card">
 					<h3>Honest Education</h3>
 					<p>We share the real challenges. The mistakes. The lessons. Not a sales pitch—a genuine knowledge transfer from people who've done it.</p>
 				</div>
 				<div class="exp-card">
-					<h3>Community Connection</h3>
-					<p>Join a network of builders, designers, and entrepreneurs thinking differently about housing. Connections made here matter.</p>
+					<h3>Access to the Builders</h3>
+					<p>Spend the weekend with the people who designed and built it. Ask anything—you'll get straight answers, not marketing.</p>
 				</div>
 				<div class="exp-card">
-					<h3>📍 Stunning Hill Country Location</h3>
-					<p>Located in the Texas Hill Country with views overlooking water and landscape. Work, reflect, or just slow down in a beautiful setting.</p>
+					<h3>Stunning Hill Country Location</h3>
+					<p>Texas Hill Country, with views overlooking water and landscape. Work, reflect, or just slow down in a beautiful setting.</p>
 				</div>
 			</div>
 		</div>
@@ -52,6 +53,7 @@ import Layout from '../layouts/Layout.astro';
 	<!-- The Space -->
 	<section class="space-section">
 		<div class="container">
+			<span class="eyebrow">The Space</span>
 			<h2>The Property</h2>
 			<p>Three shipping containers configured as a modern, functional home. Designed for living, not just surviving.</p>
 
@@ -148,7 +150,8 @@ import Layout from '../layouts/Layout.astro';
 	<!-- Pricing -->
 	<section class="pricing-section" id="booking">
 		<div class="container">
-			<h2>Pricing & Booking</h2>
+			<span class="eyebrow">Pricing &amp; Booking</span>
+			<h2>Book Your Stay</h2>
 
 			<div class="pricing-grid">
 				<div class="pricing-card">
@@ -158,8 +161,8 @@ import Layout from '../layouts/Layout.astro';
 					<ul>
 						<li>Accommodations for 2-4 people</li>
 						<li>4-hour building walkthrough (Saturday)</li>
-						<li>Educational materials</li>
-						<li>Community membership</li>
+						<li>Educational materials &amp; design docs</li>
+						<li>Access to the builders</li>
 					</ul>
 					<a href="/book" class="btn btn-primary">Book Now</a>
 				</div>
@@ -173,9 +176,9 @@ import Layout from '../layouts/Layout.astro';
 						<li>2 full-day building walkthroughs</li>
 						<li>Systems deep-dive workshop</li>
 						<li>One-on-one consultation</li>
-						<li>Community membership + priority access</li>
+						<li>Priority booking access</li>
 					</ul>
-					<a href="https://www.airbnb.com/your-listing" class="btn btn-primary" target="_blank">Book on Airbnb</a>
+					<a href="/book" class="btn btn-primary">Book Now</a>
 				</div>
 
 				<div class="pricing-card">
@@ -197,6 +200,7 @@ import Layout from '../layouts/Layout.astro';
 	<!-- Who's Teaching -->
 	<section class="teaching-section">
 		<div class="container">
+			<span class="eyebrow">Your Hosts</span>
 			<h2>Who You're Learning From</h2>
 
 			<div class="instructor-bios instructor-bios-3">
@@ -224,6 +228,7 @@ import Layout from '../layouts/Layout.astro';
 	<!-- Walkthrough Options -->
 	<section class="walkthrough-options">
 		<div class="container">
+			<span class="eyebrow">The Walkthrough</span>
 			<h2>Your Learning Experience</h2>
 			<p>Every stay includes access to our 4-hour walkthrough. You'll choose how you experience it:</p>
 
@@ -322,6 +327,12 @@ import Layout from '../layouts/Layout.astro';
 </Layout>
 
 <style>
+	/* Center section eyebrows */
+	section > .container > .eyebrow {
+		display: block;
+		text-align: center;
+	}
+
 	/* Experience Section */
 	.experience-section {
 		padding: 5rem 0;
@@ -350,10 +361,9 @@ import Layout from '../layouts/Layout.astro';
 	}
 
 	.exp-card {
-		background: var(--color-warm);
-		padding: 2rem;
-		border-radius: 4px;
-		border-left: 4px solid var(--color-blue);
+		background: white;
+		padding: 1.5rem 0 1.5rem 1.5rem;
+		border-left: 3px solid var(--color-blue);
 	}
 
 	.exp-card h3 {
@@ -536,18 +546,18 @@ import Layout from '../layouts/Layout.astro';
 	}
 
 	.pricing-card {
-		background: var(--color-warm);
+		background: white;
 		padding: 2rem;
 		border-radius: 4px;
-		border-left: 4px solid var(--color-blue);
+		border: 1px solid #e5e7eb;
+		border-top: 3px solid var(--color-blue);
 		display: flex;
 		flex-direction: column;
 	}
 
 	.pricing-card.featured {
-		border-left-color: var(--color-rust);
-		background: linear-gradient(135deg, var(--color-warm), rgba(192, 86, 33, 0.05));
-		transform: scale(1.05);
+		border-top-color: var(--color-navy);
+		border-color: var(--color-navy);
 	}
 
 	.pricing-card h3 {
