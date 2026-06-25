@@ -12,13 +12,29 @@ import Layout from '../layouts/Layout.astro';
 		</div>
 	</header>
 
+	<!-- Video Sample -->
+	<section class="container content-section">
+		<div class="section-head">
+			<span class="eyebrow">Sample Clip</span>
+			<h2>A Look at the Foundation</h2>
+			<p>A short walkthrough of how the foundation came together — a taste of the full course.</p>
+		</div>
+
+		<div class="video-wrapper">
+			<video class="video-frame" controls preload="metadata" playsinline poster="/images/Foundation-3.jpg">
+				<source src="/videos/foundation-walkthrough.mp4" type="video/mp4" />
+				Your browser doesn't support embedded video.
+			</video>
+		</div>
+	</section>
+
 	<section class="container content-section">
 		<h2>What You Get</h2>
 		<p>A 4-hour recorded walkthrough of the Sustainabox property. You get the same knowledge transfer as an in-person visit—at your own pace, whenever you want.</p>
 
 		<div class="walkthrough-sections">
 			<div class="section-card">
-				<h3>🏗️ Foundation & Site</h3>
+				<h3>Foundation &amp; Site</h3>
 				<p>Pier foundation design, site preparation, why we chose this approach, and what we'd do differently.</p>
 			</div>
 			<div class="section-card">
@@ -26,19 +42,19 @@ import Layout from '../layouts/Layout.astro';
 				<p>Cutting openings, reinforcing the structure, integrating MEP systems. The engineering behind the decisions.</p>
 			</div>
 			<div class="section-card">
-				<h3>⚡ Electrical Systems</h3>
+				<h3>Electrical Systems</h3>
 				<p>Main panel, circuits, load calculations, grounding. How we designed for efficiency and resilience.</p>
 			</div>
 			<div class="section-card">
-				<h3>💧 Plumbing & Water</h3>
+				<h3>Plumbing &amp; Water</h3>
 				<p>Supply lines, fixtures, septic integration, water management. Real costs and maintenance realities.</p>
 			</div>
 			<div class="section-card">
-				<h3>🌡️ Thermal & HVAC</h3>
+				<h3>Thermal &amp; HVAC</h3>
 				<p>Insulation strategy, ventilation, temperature control. How container design challenges were solved.</p>
 			</div>
 			<div class="section-card">
-				<h3>🏠 Interiors & Finishes</h3>
+				<h3>Interiors &amp; Finishes</h3>
 				<p>Layout decisions, materials selection, storage design. Making 750 sq ft feel spacious and functional.</p>
 			</div>
 		</div>
@@ -128,6 +144,55 @@ import Layout from '../layouts/Layout.astro';
 <style>
 	.content-section {
 		padding: 3rem 0;
+	}
+
+	/* Responsive 16:9 video */
+	.video-wrapper {
+		position: relative;
+		width: 100%;
+		max-width: 900px;
+		margin: 0 auto;
+		aspect-ratio: 16 / 9;
+		border-radius: 6px;
+		overflow: hidden;
+		box-shadow: 0 12px 32px rgba(26,39,68,0.18);
+	}
+
+	.video-wrapper :global(.video-frame),
+	.video-placeholder {
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+		border: 0;
+	}
+
+	.video-placeholder {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem;
+		background: linear-gradient(135deg, var(--color-navy), var(--color-blue));
+		color: rgba(255,255,255,0.9);
+	}
+
+	.video-play {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 72px;
+		height: 72px;
+		border-radius: 50%;
+		border: 2px solid rgba(255,255,255,0.7);
+		font-size: 1.6rem;
+		padding-left: 0.3rem;
+	}
+
+	.video-placeholder p {
+		font-size: 0.95rem;
+		letter-spacing: 0.05em;
+		margin: 0;
 	}
 
 	.content-section h2 {
