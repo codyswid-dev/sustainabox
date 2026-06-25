@@ -1,0 +1,227 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Book Your Stay — Sustainabox">
+
+	<div class="page-header">
+		<div class="container">
+			<h1>Book Your Stay</h1>
+			<p>Premium experience. Expert-led walkthrough. Real learning.</p>
+		</div>
+	</div>
+
+	<section class="container content-section">
+		<div class="booking-wrapper">
+			<div class="booking-info">
+				<h2>Sustainabox Stays</h2>
+				<p><strong>Weekend Experience</strong><br>Friday evening through Sunday afternoon</p>
+				<ul>
+					<li>Accommodations for 2–4 guests</li>
+					<li>4-hour guided walkthrough with expert instruction</li>
+					<li>Educational materials and design documentation</li>
+					<li>Access to builders and designers</li>
+				</ul>
+
+				<p style="margin-top: 2rem;"><strong>$599–$799</strong> depending on group size and season</p>
+
+				<div class="booking-divider"></div>
+
+				<h3>Get in Touch</h3>
+				<p>To check availability and book your stay, please reach out:</p>
+
+				<div class="contact-links">
+					<div class="contact-card">
+						<h4>Jen Swidler</h4>
+						<p class="role">Host & Homebuilding Expert</p>
+						<p>7 years of homebuilding and project management</p>
+						<a href="mailto:jenswid@gmail.com" class="btn btn-primary">Email Jen</a>
+					</div>
+
+					<div class="contact-card">
+						<h4>Cody Swidler</h4>
+						<p class="role">Host & Resilience Design</p>
+						<p>15+ years enterprise resilience and systems design</p>
+						<a href="mailto:codyswid@gmail.com" class="btn btn-primary">Email Cody</a>
+					</div>
+				</div>
+
+				<p style="margin-top: 2rem; font-size: 0.9rem; color: var(--color-muted);">We typically respond within 24 hours. Include your preferred dates and number of guests.</p>
+			</div>
+
+			<div class="booking-preview">
+				<div class="preview-box">
+					<img src="/images/deck%202.jpeg" alt="Sustainabox outdoor living space" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
+					<h3>What to Expect</h3>
+					<ul>
+						<li><strong>Friday evening:</strong> Arrival, orientation, dinner</li>
+						<li><strong>Saturday morning:</strong> 4-hour guided walkthrough + Q&A</li>
+						<li><strong>Saturday afternoon:</strong> Free time, explore, relax on deck</li>
+						<li><strong>Sunday:</strong> Breakfast, discussions, depart by noon</li>
+					</ul>
+
+					<h3 style="margin-top: 2rem;">Who Should Come?</h3>
+					<ul>
+						<li>Builders and designers researching container homes</li>
+						<li>Anyone considering alternative housing</li>
+						<li>People interested in resilience and sustainable design</li>
+						<li>Educators and content creators</li>
+						<li>Curious learners ready to ask hard questions</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</Layout>
+
+<style>
+	.page-header {
+		background: var(--color-navy);
+		color: white;
+		padding: 4rem 0;
+		text-align: center;
+	}
+
+	.page-header h1 {
+		color: white;
+		margin-bottom: 1rem;
+	}
+
+	.page-header p {
+		font-size: 1.1rem;
+		opacity: 0.9;
+	}
+
+	.content-section {
+		padding: 4rem 0;
+	}
+
+	.booking-wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 4rem;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.booking-info h2 {
+		margin-bottom: 1.5rem;
+	}
+
+	.booking-info p {
+		color: var(--color-muted);
+		margin-bottom: 1rem;
+		line-height: 1.7;
+	}
+
+	.booking-info ul {
+		list-style: none;
+		padding: 0;
+		margin: 1.5rem 0;
+	}
+
+	.booking-info li {
+		padding: 0.5rem 0;
+		padding-left: 1.5rem;
+		position: relative;
+		color: var(--color-muted);
+	}
+
+	.booking-info li::before {
+		content: "✓";
+		position: absolute;
+		left: 0;
+		color: var(--color-blue);
+		font-weight: bold;
+	}
+
+	.booking-divider {
+		height: 1px;
+		background: #e2e8f0;
+		margin: 2rem 0;
+	}
+
+	.contact-links {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+		margin-top: 1.5rem;
+	}
+
+	.contact-card {
+		background: var(--color-warm);
+		padding: 1.75rem;
+		border-radius: 4px;
+		border-left: 3px solid var(--color-blue);
+	}
+
+	.contact-card h4 {
+		color: var(--color-navy);
+		margin-bottom: 0.25rem;
+		font-size: 1.1rem;
+	}
+
+	.contact-card .role {
+		color: var(--color-blue);
+		font-size: 0.9rem;
+		font-weight: 600;
+		margin-bottom: 0.5rem;
+	}
+
+	.contact-card p {
+		font-size: 0.9rem;
+		color: var(--color-muted);
+		margin-bottom: 1rem;
+	}
+
+	.contact-card .btn {
+		display: inline-block;
+	}
+
+	.booking-preview {
+		position: sticky;
+		top: 100px;
+		height: fit-content;
+	}
+
+	.preview-box {
+		background: white;
+		padding: 2rem;
+		border: 1px solid #e2e8f0;
+		border-radius: 8px;
+	}
+
+	.preview-box h3 {
+		color: var(--color-navy);
+		margin-bottom: 1rem;
+		font-size: 1.15rem;
+	}
+
+	.preview-box ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	.preview-box li {
+		padding: 0.6rem 0;
+		color: var(--color-muted);
+		font-size: 0.9rem;
+		line-height: 1.6;
+	}
+
+	@media (max-width: 768px) {
+		.booking-wrapper {
+			grid-template-columns: 1fr;
+			gap: 2rem;
+		}
+
+		.booking-preview {
+			position: static;
+		}
+
+		.contact-links {
+			flex-direction: column;
+		}
+	}
+</style>
