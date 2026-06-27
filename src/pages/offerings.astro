@@ -14,35 +14,31 @@ import Layout from '../layouts/Layout.astro';
 
 	<section class="container content-section">
 
-		<!-- Stay & Learn -->
-		<div class="offering-block">
-			<div class="offering-text">
+		<div class="offerings-grid">
+
+			<!-- Stay & Learn -->
+			<div class="offering-card">
 				<span class="eyebrow">Experience</span>
 				<h2>Stay &amp; Learn</h2>
 				<p>Spend a weekend at Sustainabox and experience container living firsthand. Every stay includes access to our in-depth build walkthrough and the opportunity to ask questions about every part of the project.</p>
 				<p class="best-for"><strong>Best for:</strong> People exploring container homes before starting their own project.</p>
 				<a href="/stays" class="btn btn-primary">Learn More</a>
 			</div>
-		</div>
 
-		<!-- Build Walkthrough -->
-		<div class="offering-block">
-			<div class="offering-text">
+			<!-- Build Walkthrough -->
+			<div class="offering-card">
 				<span class="eyebrow">Education</span>
 				<h2>Build Walkthrough</h2>
 				<p>Our recorded four-hour walkthrough covers the entire build — from site preparation and container modifications to insulation, utilities, finishes, and everything in between.</p>
 				<p class="best-for"><strong>Best for:</strong> DIY builders who want to learn at their own pace.</p>
 				<a href="/course" class="btn btn-primary">Learn More</a>
 			</div>
-		</div>
 
-		<!-- Consulting -->
-		<div class="offering-block">
-			<div class="offering-text">
+			<!-- Consulting -->
+			<div class="offering-card">
 				<span class="eyebrow">1:1 Support</span>
 				<h2>Consulting</h2>
 				<p>Need another set of experienced eyes? Whether you're reviewing plans, deciding between options, or working through a challenge during construction, we offer one-on-one consulting tailored to your project.</p>
-				<p>Common topics include:</p>
 				<ul class="topic-list">
 					<li>Design reviews</li>
 					<li>Build sequencing</li>
@@ -53,36 +49,31 @@ import Layout from '../layouts/Layout.astro';
 				</ul>
 				<a href="/contact" class="btn btn-primary">Get in Touch</a>
 			</div>
-		</div>
 
-		<!-- Resiliency Review -->
-		<div class="offering-block offering-block--featured">
-			<div class="offering-text">
-				<span class="eyebrow">Unique to Sustainabox</span>
-				<h2>Resiliency Review</h2>
-				<p>How resilient is your home?</p>
-				<p>We'll review your plans for power outages, water interruptions, severe weather, maintenance, long-term durability, and operational risk — not just building code.</p>
-				<p>Most container home consultants can tell you where to put insulation. Very few can think systematically about how a home performs over decades, how systems fail, or how to design for resilience without adding unnecessary complexity. That's what we bring.</p>
-				<p class="best-for"><strong>Best for:</strong> Builders who want their home to perform well long after move-in, not just pass inspection.</p>
-				<a href="/contact" class="btn btn-primary">Get in Touch</a>
-			</div>
-		</div>
-
-		<!-- Digital Resources -->
-		<div class="offering-block">
-			<div class="offering-text">
+			<!-- Digital Resources -->
+			<div class="offering-card offering-card--muted">
 				<span class="eyebrow coming-soon-tag">Coming Soon</span>
 				<h2>Digital Resources</h2>
-				<p>We're turning everything we created during the build into downloadable resources, including:</p>
-				<ul class="topic-list">
-					<li>Budget templates</li>
-					<li>Planning checklists</li>
-					<li>Build documentation</li>
-					<li>Design resources</li>
-					<li>Project planning tools</li>
-				</ul>
-				<p>Join our newsletter to be the first to know when they're available — and to tell us what you actually need.</p>
+				<p>We're turning everything we created during the build into downloadable resources, including budget templates, planning checklists, build documentation, and project planning tools.</p>
+				<p>Join our newsletter to be the first to know — and to tell us what you actually need.</p>
 				<a href="mailto:jenswid@gmail.com,codyswid@gmail.com?subject=Sustainabox%20Resources%20Newsletter" class="btn btn-outline">Get Notified</a>
+			</div>
+
+		</div>
+
+		<!-- Resiliency Review — Full Width Featured -->
+		<div class="offering-featured">
+			<div class="offering-featured-inner">
+				<div class="featured-label">
+					<span class="eyebrow">Unique to Sustainabox</span>
+				</div>
+				<div class="featured-content">
+					<h2>Resiliency Review</h2>
+					<p>How resilient is your home? We'll review your plans for power outages, water interruptions, severe weather, maintenance, long-term durability, and operational risk — not just building code.</p>
+					<p>Most container home consultants can tell you where to put insulation. Very few can think systematically about how a home performs over decades, how systems fail, or how to design for resilience without adding unnecessary complexity. That's what we bring.</p>
+					<p class="best-for"><strong>Best for:</strong> Builders who want their home to perform well long after move-in, not just pass inspection.</p>
+					<a href="/contact" class="btn btn-primary">Get in Touch</a>
+				</div>
 			</div>
 		</div>
 
@@ -104,42 +95,96 @@ import Layout from '../layouts/Layout.astro';
 		padding: 4rem 0;
 	}
 
-	.offering-block {
-		padding: 4rem 0;
-		border-bottom: 1px solid #e2e8f0;
-		max-width: 760px;
+	/* 2-column card grid */
+	.offerings-grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 2rem;
+		margin-bottom: 2rem;
 	}
 
-	.offering-block:last-child {
-		border-bottom: none;
-	}
-
-	.offering-block--featured {
-		background: var(--color-warm);
-		padding: 3rem;
+	.offering-card {
+		background: white;
+		border: 1px solid #e5e7eb;
+		border-top: 3px solid var(--color-blue);
 		border-radius: 4px;
-		border-left: 4px solid var(--color-navy);
-		border-bottom: none;
-		margin-bottom: 0;
-		max-width: 760px;
+		padding: 2.5rem;
+		display: flex;
+		flex-direction: column;
 	}
 
-	.offering-text h2 {
+	.offering-card--muted {
+		border-top-color: #cbd5e0;
+		background: var(--color-warm);
+	}
+
+	.offering-card h2 {
 		color: var(--color-navy);
-		font-size: 1.75rem;
+		font-size: 1.4rem;
 		margin-bottom: 1rem;
 	}
 
-	.offering-text p {
+	.offering-card p {
 		color: var(--color-muted);
 		line-height: 1.8;
 		margin-bottom: 1rem;
-		font-size: 1rem;
+		font-size: 0.95rem;
+		flex-grow: 1;
+	}
+
+	.offering-card .btn {
+		align-self: flex-start;
+		margin-top: auto;
+	}
+
+	/* Featured full-width block */
+	.offering-featured {
+		background: var(--color-navy);
+		border-radius: 4px;
+		padding: 3rem;
+		margin-bottom: 0;
+	}
+
+	.offering-featured-inner {
+		display: grid;
+		grid-template-columns: 200px 1fr;
+		gap: 3rem;
+		align-items: start;
+	}
+
+	.featured-label {
+		padding-top: 0.25rem;
+	}
+
+	.featured-label .eyebrow {
+		color: rgba(255,255,255,0.6);
+	}
+
+	.featured-content h2 {
+		color: white;
+		font-size: 1.6rem;
+		margin-bottom: 1rem;
+	}
+
+	.featured-content p {
+		color: rgba(255,255,255,0.8);
+		line-height: 1.8;
+		margin-bottom: 1rem;
+		font-size: 0.95rem;
+	}
+
+	.featured-content .best-for strong {
+		color: white;
+	}
+
+	.featured-content .btn-primary {
+		background: white;
+		color: var(--color-navy);
+		margin-top: 0.5rem;
 	}
 
 	.best-for {
 		font-size: 0.9rem !important;
-		color: var(--color-muted);
 		margin-bottom: 1.5rem !important;
 	}
 
@@ -151,16 +196,13 @@ import Layout from '../layouts/Layout.astro';
 		list-style: none;
 		padding: 0;
 		margin: 0.5rem 0 1.5rem;
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-		gap: 0.25rem 1rem;
 	}
 
 	.topic-list li {
-		padding: 0.35rem 0 0.35rem 1.25rem;
+		padding: 0.3rem 0 0.3rem 1.25rem;
 		position: relative;
 		color: var(--color-muted);
-		font-size: 0.95rem;
+		font-size: 0.9rem;
 	}
 
 	.topic-list li::before {
@@ -205,12 +247,17 @@ import Layout from '../layouts/Layout.astro';
 	}
 
 	@media (max-width: 768px) {
-		.offering-block--featured {
-			padding: 2rem;
+		.offerings-grid {
+			grid-template-columns: 1fr;
 		}
 
-		.topic-list {
+		.offering-featured-inner {
 			grid-template-columns: 1fr;
+			gap: 1rem;
+		}
+
+		.offering-featured {
+			padding: 2rem;
 		}
 	}
 </style>
