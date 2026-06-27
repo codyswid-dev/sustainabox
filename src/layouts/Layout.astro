@@ -61,7 +61,50 @@ const canonicalURL = new URL(Astro.url.pathname, "https://sustainabox.org");
 
 		<footer class="footer">
 			<div class="container">
-				<p>&copy; {new Date().getFullYear()} Sustainabox. Resilience Designed. Built Real.</p>
+				<div class="footer-grid">
+
+					<div class="footer-brand">
+						<span class="footer-logo">Sustainabox</span>
+						<p>Built to Live In. Shared to Learn From.</p>
+						<p class="footer-contact"><a href="mailto:jenswid@gmail.com">jenswid@gmail.com</a></p>
+					</div>
+
+					<div class="footer-col">
+						<h4>Experience</h4>
+						<ul>
+							<li><a href="/stays">Stay &amp; Learn</a></li>
+							<li><a href="/book">Book a Stay</a></li>
+							<li><a href="/course">Build Walkthrough</a></li>
+							<li><a href="/construction">The Build</a></li>
+						</ul>
+					</div>
+
+					<div class="footer-col">
+						<h4>Services</h4>
+						<ul>
+							<li><a href="/offerings">All Offerings</a></li>
+							<li><a href="/contact">Consulting</a></li>
+							<li><a href="/contact">SketchUp Design</a></li>
+							<li><a href="/vision">Our Story</a></li>
+						</ul>
+					</div>
+
+					<div class="footer-col">
+						<h4>Policies</h4>
+						<ul>
+							<li><a href="/policies#cancellation">Cancellation Policy</a></li>
+							<li><a href="/policies#booking">Booking Terms</a></li>
+							<li><a href="/policies#liability">Liability &amp; Waiver</a></li>
+							<li><a href="/policies#privacy">Privacy Policy</a></li>
+						</ul>
+					</div>
+
+				</div>
+
+				<div class="footer-bottom">
+					<p>&copy; {new Date().getFullYear()} Sustainabox LLC. All rights reserved.</p>
+					<p>Texas Hill Country &nbsp;·&nbsp; <a href="mailto:jenswid@gmail.com">jenswid@gmail.com</a> &nbsp;·&nbsp; 737-733-2084</p>
+				</div>
 			</div>
 		</footer>
 
@@ -407,11 +450,106 @@ const canonicalURL = new URL(Astro.url.pathname, "https://sustainabox.org");
 
 	/* Footer */
 	.footer {
-		background: var(--color-navy);
-		color: var(--color-muted);
-		text-align: center;
-		padding: 2rem 0;
-		font-size: 0.85rem;
+		background: #0f1e38;
+		color: rgba(255,255,255,0.55);
+		padding: 4rem 0 2rem;
+		font-size: 0.875rem;
+	}
+
+	.footer-grid {
+		display: grid;
+		grid-template-columns: 2fr 1fr 1fr 1fr;
+		gap: 3rem;
+		padding-bottom: 3rem;
+		border-bottom: 1px solid rgba(255,255,255,0.1);
+		margin-bottom: 2rem;
+	}
+
+	.footer-logo {
+		display: block;
+		font-family: var(--font-heading);
+		font-size: 1.25rem;
+		font-weight: 700;
+		color: white;
+		margin-bottom: 0.75rem;
+		letter-spacing: 0.04em;
+	}
+
+	.footer-brand p {
+		line-height: 1.6;
+		margin-bottom: 0.5rem;
+	}
+
+	.footer-contact a {
+		color: rgba(255,255,255,0.7);
+		text-decoration: none;
+	}
+
+	.footer-contact a:hover {
+		color: white;
+	}
+
+	.footer-col h4 {
+		color: white;
+		font-size: 0.75rem;
+		font-weight: 700;
+		letter-spacing: 0.15em;
+		text-transform: uppercase;
+		margin-bottom: 1rem;
+	}
+
+	.footer-col ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.footer-col li {
+		margin-bottom: 0.6rem;
+	}
+
+	.footer-col a {
+		color: rgba(255,255,255,0.55);
+		text-decoration: none;
+		transition: color 0.2s;
+	}
+
+	.footer-col a:hover {
+		color: white;
+	}
+
+	.footer-bottom {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+		font-size: 0.8rem;
+	}
+
+	.footer-bottom a {
+		color: rgba(255,255,255,0.55);
+		text-decoration: none;
+	}
+
+	.footer-bottom a:hover {
+		color: white;
+	}
+
+	@media (max-width: 768px) {
+		.footer-grid {
+			grid-template-columns: 1fr 1fr;
+			gap: 2rem;
+		}
+
+		.footer-brand {
+			grid-column: 1 / -1;
+		}
+
+		.footer-bottom {
+			flex-direction: column;
+			text-align: center;
+		}
 	}
 
 	/* Lightbox */
