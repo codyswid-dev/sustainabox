@@ -2,63 +2,80 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Our Story — Sustainabox" description="We built the home we couldn't find. Sustainabox is a container home in the Texas Hill Country — and a growing resource for anyone serious about building their own." image="/images/PXL_20260619_013004398.jpg">
+<Layout title="Our Vision — Sustainabox" description="Sustainabox started with a question: could a shipping container become a home we'd actually want to live in? What we built next was bigger than the home." image="/images/PXL_20260619_013004398.jpg">
 
 	<header class="page-hero" style="background-image: url('/images/PXL_20260619_013004398.jpg');">
 		<div class="page-hero-inner">
-			<span class="eyebrow">Our Story</span>
-			<h1>The Story</h1>
+			<span class="eyebrow">Our Vision</span>
+			<h1>Building More Than a Home</h1>
 			<p>Built to Live In. Shared to Learn From.</p>
 		</div>
 	</header>
 
-	<!-- The Story -->
 	<section class="container content-section">
-		<div class="story-intro">
-			<h2>We built the home we couldn't find.</h2>
-			<p>Sustainabox started with a simple idea: could shipping containers become a beautiful, practical home without sacrificing comfort?</p>
-			<p>What followed was years of designing, building, documenting, and solving problems. Jen led the construction and documented every step of the journey. Cody designed the home in SketchUp and is focused on turning everything we learned into resources that help others build with confidence.</p>
-			<p>Today, Sustainabox is more than a container home. It's a place to stay, a place to learn, and a growing resource for anyone interested in container construction, resilient design, and intentional living.</p>
+
+		<div class="vision-body">
+
+			<div class="vision-opening">
+				<p class="lead">Sustainabox started with a simple question:</p>
+				<p class="pull-quote">Could a shipping container become a home we'd actually want to live in?</p>
+				<p>The answer wasn't found in a YouTube video or a set of plans. It came through years of research, design, construction, problem solving, and learning — one decision at a time.</p>
+				<p>Along the way, we realized something bigger.</p>
+			</div>
+
+			<div class="vision-divider"></div>
+
+			<div class="vision-section">
+				<p>The world doesn't need another picture-perfect container home. It needs honest information from people who have actually built one.</p>
+				<p>Too many alternative housing projects are sold as simple, inexpensive, or turnkey. The reality is more nuanced. Every project involves trade-offs, unexpected challenges, and hundreds of decisions that can save — or cost — thousands of dollars.</p>
+				<p>That's why Sustainabox exists.</p>
+				<p>We're building a place where builders, homeowners, dreamers, and curious travelers can learn from real experience instead of marketing.</p>
+				<p>Today that includes a place to stay, educational walkthroughs, consulting, and practical resources. Tomorrow it will grow into a larger ecosystem of courses, tools, design resources, AI-powered planning assistants, community, and partnerships that make alternative housing more approachable for everyone.</p>
+				<p>We don't claim to have all the answers. We simply believe that sharing what we've learned — both the successes and the mistakes — helps others build better.</p>
+			</div>
+
+			<div class="vision-divider"></div>
+
+			<!-- Principles -->
+			<div class="principles-section">
+				<h2>Our Principles</h2>
+				<div class="principles-grid">
+					<div class="principle">
+						<h3>Build with intention.</h3>
+						<p>Every decision should have a purpose.</p>
+					</div>
+					<div class="principle">
+						<h3>Share what works — and what doesn't.</h3>
+						<p>Real experience is more valuable than polished marketing.</p>
+					</div>
+					<div class="principle">
+						<h3>Design for resilience.</h3>
+						<p>Homes should be comfortable, durable, adaptable, and prepared for change.</p>
+					</div>
+					<div class="principle">
+						<h3>Keep learning.</h3>
+						<p>Every project teaches something worth passing on.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="vision-divider"></div>
+
+			<!-- Closing -->
+			<div class="vision-close">
+				<p>This is only the beginning.</p>
+				<p>Sustainabox isn't just the home we built. It's the community, knowledge, and tools we're building next.</p>
+				<p class="closing-statement">Our goal isn't to build hundreds of container homes.<br>It's to help thousands of people build better ones.</p>
+			</div>
+
 		</div>
+
 	</section>
 
-	<!-- The Experience -->
-	<section class="experience-section">
+	<section class="vision-cta">
 		<div class="container">
-			<div class="section-head">
-				<span class="eyebrow">What a Visit Looks Like</span>
-				<h2>Stay. Learn. Build.</h2>
-				<p>Every visit includes more than a comfortable place to stay.</p>
-			</div>
-
-			<div class="experience-grid">
-				<div class="experience-card">
-					<h3>Explore the Home</h3>
-					<p>Walk through every system, material choice, and design decision that brought Sustainabox to life.</p>
-				</div>
-				<div class="experience-card">
-					<h3>Ask Questions</h3>
-					<p>Whether you're planning your own build or simply curious, we're happy to share the lessons we learned.</p>
-				</div>
-				<div class="experience-card">
-					<h3>See Real Solutions</h3>
-					<p>No staged displays or showroom tricks — just the real home we designed, built, and live with.</p>
-				</div>
-				<div class="experience-card">
-					<h3>Leave Inspired</h3>
-					<p>Take home practical ideas, honest advice, and a clearer vision for your own project.</p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Beyond Your Stay -->
-	<section class="container beyond-section">
-		<div class="beyond-inner">
-			<span class="eyebrow">Beyond Your Stay</span>
-			<h2>The Learning Doesn't End When You Head Home.</h2>
-			<p>Explore the recorded walkthrough, build documentation, consulting services, design resources, and new tools we're creating to make container building more approachable for everyone.</p>
-			<a href="/offerings" class="btn btn-primary">See What We Offer</a>
+			<a href="/stays" class="btn btn-primary">Experience It in Person</a>
+			<a href="/offerings" class="btn btn-outline">See How We Can Help</a>
 		</div>
 	</section>
 
@@ -69,81 +86,115 @@ import Layout from '../layouts/Layout.astro';
 		padding: 5rem 0;
 	}
 
-	.story-intro {
-		max-width: 760px;
+	.vision-body {
+		max-width: 720px;
 	}
 
-	.story-intro h2 {
-		color: var(--color-navy);
-		font-size: 2rem;
-		margin-bottom: 1.5rem;
-	}
-
-	.story-intro p {
+	.vision-opening .lead {
 		color: var(--color-muted);
-		line-height: 1.8;
+		font-size: 1.1rem;
+		margin-bottom: 1rem;
+	}
+
+	.pull-quote {
+		font-family: var(--font-heading);
+		font-size: 1.5rem;
+		font-weight: 700;
+		color: var(--color-navy);
+		line-height: 1.4;
+		padding-left: 1.5rem;
+		border-left: 4px solid var(--color-blue);
+		margin: 1.5rem 0 2rem;
+	}
+
+	.vision-opening p,
+	.vision-section p {
+		color: var(--color-muted);
+		line-height: 1.9;
 		font-size: 1.05rem;
 		margin-bottom: 1.25rem;
 	}
 
-	/* Experience */
-	.experience-section {
-		padding: 5rem 0;
-		background: var(--color-warm);
+	.vision-divider {
+		height: 1px;
+		background: #e2e8f0;
+		margin: 3rem 0;
 	}
 
-	.experience-grid {
+	/* Principles */
+	.principles-section h2 {
+		color: var(--color-navy);
+		font-size: 1.4rem;
+		margin-bottom: 2rem;
+	}
+
+	.principles-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-		gap: 2rem;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 1.5rem;
 	}
 
-	.experience-card {
-		padding: 2rem 0 2rem 1.5rem;
+	.principle {
+		padding: 1.5rem 0 1.5rem 1.5rem;
 		border-left: 3px solid var(--color-blue);
 	}
 
-	.experience-card h3 {
+	.principle h3 {
 		color: var(--color-navy);
-		margin-bottom: 0.75rem;
-		font-size: 1.1rem;
+		font-size: 1rem;
+		margin-bottom: 0.4rem;
 	}
 
-	.experience-card p {
+	.principle p {
 		color: var(--color-muted);
-		line-height: 1.7;
-		font-size: 0.95rem;
+		font-size: 0.9rem;
+		line-height: 1.6;
 		margin: 0;
 	}
 
-	/* Beyond */
-	.beyond-section {
-		padding: 5rem 0;
-	}
-
-	.beyond-inner {
-		max-width: 680px;
-	}
-
-	.beyond-inner h2 {
-		color: var(--color-navy);
+	/* Closing */
+	.vision-close p {
+		color: var(--color-muted);
+		line-height: 1.9;
+		font-size: 1.05rem;
 		margin-bottom: 1.25rem;
 	}
 
-	.beyond-inner p {
-		color: var(--color-muted);
-		line-height: 1.8;
-		margin-bottom: 2rem;
-		font-size: 1rem;
+	.closing-statement {
+		font-family: var(--font-heading);
+		font-size: 1.35rem;
+		font-weight: 700;
+		color: var(--color-navy) !important;
+		line-height: 1.5 !important;
+		margin-top: 2rem !important;
+	}
+
+	/* CTA */
+	.vision-cta {
+		padding: 4rem 0 6rem;
+	}
+
+	.vision-cta .container {
+		display: flex;
+		gap: 1rem;
+		flex-wrap: wrap;
 	}
 
 	@media (max-width: 768px) {
-		.experience-grid {
+		.pull-quote {
+			font-size: 1.25rem;
+		}
+
+		.principles-grid {
 			grid-template-columns: 1fr;
 		}
 
-		.story-intro h2 {
-			font-size: 1.5rem;
+		.closing-statement {
+			font-size: 1.15rem !important;
+		}
+
+		.vision-cta .container {
+			flex-direction: column;
 		}
 	}
 </style>
