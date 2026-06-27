@@ -2,193 +2,98 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Offerings — Sustainabox" description="Expert consulting, 4-hour recorded walkthroughs, digital templates, and design tools for container homes and alternative housing. Learn from 7 years of homebuilding experience.">
+<Layout title="How We Can Help — Sustainabox" description="Stay, learn, consult. Access real experience from the people who designed and built Sustainabox — so you can make better decisions on your own build." image="/images/Interior-1.jpg">
 
 	<header class="page-hero" style="background-image: url('/images/Interior-1.jpg');">
 		<div class="page-hero-inner">
 			<span class="eyebrow">Offerings</span>
-			<h1>Everything We Offer</h1>
-			<p>Expert consulting, educational content, and digital tools to help you design, build, and learn.</p>
+			<h1>How We Can Help</h1>
+			<p>Whether you're curious about container homes or planning your own build, we're here to help you avoid expensive mistakes and make better decisions.</p>
 		</div>
 	</header>
 
 	<section class="container content-section">
-		<!-- WHY WORK WITH US -->
-		<div class="offering-section">
-			<span class="eyebrow">Why Us</span>
-			<h2>Why Work With Us</h2>
-			<div class="why-consulting">
-				<div class="why-grid">
-					<div class="why-item">
-						<h4>Hands-On Building Experience</h4>
-						<p>Jen brings 7 years of homebuilding and general contracting. We've designed and built a full container home — costs, timelines, mistakes, and trade-offs, firsthand.</p>
-					</div>
-					<div class="why-item">
-						<h4>Resilience &amp; Risk Thinking</h4>
-						<p>Cody adds 15+ years of enterprise resilience. We design for what could go wrong and identify risks others miss.</p>
-					</div>
-					<div class="why-item">
-						<h4>Vendor Network</h4>
-						<p>We know contractors, material suppliers, permitting officials, and inspectors. We help you avoid bad decisions.</p>
-					</div>
-					<div class="why-item">
-						<h4>Practical, Not Theoretical</h4>
-						<p>Advice grounded in actual constraints: budgets, timelines, local codes, trade availability. No fluff.</p>
-					</div>
-				</div>
+
+		<!-- Stay & Learn -->
+		<div class="offering-block">
+			<div class="offering-text">
+				<span class="eyebrow">Experience</span>
+				<h2>Stay &amp; Learn</h2>
+				<p>Spend a weekend at Sustainabox and experience container living firsthand. Every stay includes access to our in-depth build walkthrough and the opportunity to ask questions about every part of the project.</p>
+				<p class="best-for"><strong>Best for:</strong> People exploring container homes before starting their own project.</p>
+				<a href="/stays" class="btn btn-primary">Learn More</a>
 			</div>
 		</div>
 
-		<!-- PRODUCTS -->
-		<div class="offering-section">
-			<span class="eyebrow">Templates &amp; Tools</span>
-			<h2>Digital Templates &amp; Tools</h2>
-			<p>Ready-made templates to help you design, plan, and execute your project independently or alongside the course.</p>
-
-			<div class="products-grid">
-				<div class="product-card">
-					<h3>Cost Calculator</h3>
-					<p class="price">$29</p>
-					<p>Detailed cost breakdown for container homes and alternative housing.</p>
-					<ul>
-						<li>Materials breakdown by category</li>
-						<li>Labor estimates by trade</li>
-						<li>Contingency planning (20–30%)</li>
-						<li>Real data from our build</li>
-					</ul>
-					<a href="https://gumroad.com/l/sustainabox-cost-calculator" class="btn btn-outline" target="_blank">Buy Now</a>
-				</div>
-
-				<div class="product-card">
-					<h3>Project Planner</h3>
-					<p class="price">$39</p>
-					<p>Timeline and milestone tracker from design through handoff.</p>
-					<ul>
-						<li>Phase breakdown (design, permits, build, finishes)</li>
-						<li>Realistic durations and dependencies</li>
-						<li>Milestone checklist</li>
-						<li>Trade coordination notes</li>
-					</ul>
-					<a href="https://gumroad.com/l/sustainabox-project-planner" class="btn btn-outline" target="_blank">Buy Now</a>
-				</div>
-
-				<div class="product-card">
-					<h3>Design Checklist</h3>
-					<p class="price">$19</p>
-					<p>Comprehensive design and code compliance checklist.</p>
-					<ul>
-						<li>Site analysis questions</li>
-						<li>Code compliance by jurisdiction</li>
-						<li>Safety and accessibility checks</li>
-						<li>Systems coordination</li>
-					</ul>
-					<a href="https://gumroad.com/l/sustainabox-design-checklist" class="btn btn-outline" target="_blank">Buy Now</a>
-				</div>
-
-				<div class="product-card bundle">
-					<h3>Complete Bundle</h3>
-					<p class="price">$79 <span class="savings">(Save $8)</span></p>
-					<p>All three templates, ready to customize.</p>
-					<ul>
-						<li>Cost Calculator</li>
-						<li>Project Planner</li>
-						<li>Design Checklist</li>
-						<li>Lifetime updates</li>
-					</ul>
-					<a href="https://gumroad.com/l/sustainabox-bundle" class="btn btn-primary" target="_blank">Buy Bundle</a>
-				</div>
-			</div>
-
-			<p style="text-align: center; margin-top: 2rem; color: var(--color-muted);">All products are digital downloads delivered immediately after purchase.</p>
-		</div>
-
-		<!-- CONSULTING -->
-		<div class="offering-section">
-			<span class="eyebrow">Consulting</span>
-			<h2>Expert Consulting</h2>
-			<p>Design review, planning, risk mitigation, and expert guidance for your container home or alternative housing project.</p>
-
-			<div class="consulting-offerings">
-				<div class="consulting-card">
-					<h3>Design Review & Feasibility</h3>
-					<p class="price">$500–2,000</p>
-					<p>Send us your plans, photos, or ideas. We review for:</p>
-					<ul>
-						<li>Structural feasibility</li>
-						<li>Code compliance risks</li>
-						<li>Cost optimization opportunities</li>
-						<li>Timeline risks</li>
-						<li>Supply chain and trade coordination</li>
-					</ul>
-					<p class="deliverable"><strong>Deliverable:</strong> Written report with findings and recommendations (3–5 pages).</p>
-					<a href="/contact" class="btn btn-outline">Learn More</a>
-				</div>
-
-				<div class="consulting-card">
-					<h3>Full Planning Package</h3>
-					<p class="price">$3,000–10,000</p>
-					<p>End-to-end planning for your project:</p>
-					<ul>
-						<li>Design optimization (if needed)</li>
-						<li>Detailed cost breakdown (materials, labor, contingency)</li>
-						<li>Timeline with milestones and dependencies</li>
-						<li>Risk register (what could go wrong, how to mitigate)</li>
-						<li>Permitting and code compliance roadmap</li>
-						<li>Vendor and trade coordination plan</li>
-					</ul>
-					<p class="deliverable"><strong>Deliverable:</strong> 20–30 page planning document + 2 follow-up calls.</p>
-					<a href="/contact" class="btn btn-outline">Learn More</a>
-				</div>
-
-				<div class="consulting-card">
-					<h3>Fractional Architect / PM</h3>
-					<p class="price">$150–250/hour</p>
-					<p>Ongoing support during your build:</p>
-					<ul>
-						<li>Design decisions and problem-solving</li>
-						<li>Code compliance questions</li>
-						<li>Cost overrun analysis and mitigation</li>
-						<li>Timeline adjustments</li>
-						<li>Trade coordination and conflict resolution</li>
-					</ul>
-					<p class="deliverable"><strong>Deliverable:</strong> Hourly or monthly retainer. You call when you need guidance.</p>
-					<a href="/contact" class="btn btn-outline">Learn More</a>
-				</div>
-			</div>
-
-			<div class="how-it-works">
-				<span class="eyebrow">Process</span>
-				<h3>How It Works</h3>
-				<ol class="process-steps">
-					<li><strong>Schedule a free 30-minute call.</strong> Tell us about your project, goals, and timeline.</li>
-					<li><strong>We propose a scope and price.</strong> Pick the service that fits your needs.</li>
-					<li><strong>You get actionable advice.</strong> Written report, calls, or ongoing support — depending on what you chose.</li>
-					<li><strong>You execute with clarity.</strong> You have a roadmap. We're available for follow-up.</li>
-				</ol>
+		<!-- Build Walkthrough -->
+		<div class="offering-block">
+			<div class="offering-text">
+				<span class="eyebrow">Education</span>
+				<h2>Build Walkthrough</h2>
+				<p>Our recorded four-hour walkthrough covers the entire build — from site preparation and container modifications to insulation, utilities, finishes, and everything in between.</p>
+				<p class="best-for"><strong>Best for:</strong> DIY builders who want to learn at their own pace.</p>
+				<a href="/course" class="btn btn-primary">Learn More</a>
 			</div>
 		</div>
 
-		<!-- LEARNING -->
-		<div class="offering-section">
-			<span class="eyebrow">The Course</span>
-			<h2>The 4-Hour Walkthrough</h2>
-			<p>A recorded tour of the complete build. From foundation to finishes. Learn what works, what we'd do differently, and why.</p>
-
-			<div class="course-teaser">
-				<div class="teaser-intro">
-					<p><strong>Learn everything:</strong> Foundation & site · Container modification · Electrical systems · Plumbing & water · Thermal & HVAC · Interiors & finishes</p>
-					<p>Choose your path: Video only ($49) or in-person stay with live walkthrough ($599–$799).</p>
-				</div>
-				<a href="/course" class="btn btn-primary">Explore Full Course Details</a>
+		<!-- Consulting -->
+		<div class="offering-block">
+			<div class="offering-text">
+				<span class="eyebrow">1:1 Support</span>
+				<h2>Consulting</h2>
+				<p>Need another set of experienced eyes? Whether you're reviewing plans, deciding between options, or working through a challenge during construction, we offer one-on-one consulting tailored to your project.</p>
+				<p>Common topics include:</p>
+				<ul class="topic-list">
+					<li>Design reviews</li>
+					<li>Build sequencing</li>
+					<li>Material selection</li>
+					<li>Budget planning</li>
+					<li>Lessons learned</li>
+					<li>Problem solving</li>
+				</ul>
+				<a href="/contact" class="btn btn-primary">Get in Touch</a>
 			</div>
-
 		</div>
 
-		<!-- CTA -->
-		<div class="final-cta">
+		<!-- Resiliency Review -->
+		<div class="offering-block offering-block--featured">
+			<div class="offering-text">
+				<span class="eyebrow">Unique to Sustainabox</span>
+				<h2>Resiliency Review</h2>
+				<p>How resilient is your home?</p>
+				<p>We'll review your plans for power outages, water interruptions, severe weather, maintenance, long-term durability, and operational risk — not just building code.</p>
+				<p>Most container home consultants can tell you where to put insulation. Very few can think systematically about how a home performs over decades, how systems fail, or how to design for resilience without adding unnecessary complexity. That's what we bring.</p>
+				<p class="best-for"><strong>Best for:</strong> Builders who want their home to perform well long after move-in, not just pass inspection.</p>
+				<a href="/contact" class="btn btn-primary">Get in Touch</a>
+			</div>
+		</div>
+
+		<!-- Digital Resources -->
+		<div class="offering-block">
+			<div class="offering-text">
+				<span class="eyebrow coming-soon-tag">Coming Soon</span>
+				<h2>Digital Resources</h2>
+				<p>We're turning everything we created during the build into downloadable resources, including:</p>
+				<ul class="topic-list">
+					<li>Budget templates</li>
+					<li>Planning checklists</li>
+					<li>Build documentation</li>
+					<li>Design resources</li>
+					<li>Project planning tools</li>
+				</ul>
+				<p>Join our newsletter to be the first to know when they're available — and to tell us what you actually need.</p>
+				<a href="mailto:jenswid@gmail.com,codyswid@gmail.com?subject=Sustainabox%20Resources%20Newsletter" class="btn btn-outline">Get Notified</a>
+			</div>
+		</div>
+
+	</section>
+
+	<!-- CTA -->
+	<section class="cta-section">
+		<div class="container">
 			<h2>Not Sure Where to Start?</h2>
-			<p>Schedule a free 30-minute call. We'll help you figure out what's right for your project.</p>
-			<a href="/contact" class="btn btn-primary">Schedule a Call</a>
+			<p>Reach out and we'll point you in the right direction.</p>
+			<a href="/contact" class="btn btn-primary">Contact Us</a>
 		</div>
 	</section>
 
@@ -196,585 +101,115 @@ import Layout from '../layouts/Layout.astro';
 
 <style>
 	.content-section {
-		padding: 3rem 0;
+		padding: 4rem 0;
 	}
 
-	.offering-section {
-		margin-bottom: 5rem;
-		padding-bottom: 3rem;
+	.offering-block {
+		padding: 4rem 0;
 		border-bottom: 1px solid #e2e8f0;
+		max-width: 760px;
 	}
 
-	.offering-section > .eyebrow {
-		display: block;
-		text-align: center;
+	.offering-block:last-child {
+		border-bottom: none;
 	}
 
-	.offering-section h2 {
+	.offering-block--featured {
+		background: var(--color-warm);
+		padding: 3rem;
+		border-radius: 4px;
+		border-left: 4px solid var(--color-navy);
+		border-bottom: none;
+		margin-bottom: 0;
+		max-width: 760px;
+	}
+
+	.offering-text h2 {
+		color: var(--color-navy);
+		font-size: 1.75rem;
 		margin-bottom: 1rem;
-		text-align: center;
 	}
 
-	.offering-section > p {
-		text-align: center;
+	.offering-text p {
 		color: var(--color-muted);
+		line-height: 1.8;
+		margin-bottom: 1rem;
+		font-size: 1rem;
+	}
+
+	.best-for {
+		font-size: 0.9rem !important;
+		color: var(--color-muted);
+		margin-bottom: 1.5rem !important;
+	}
+
+	.best-for strong {
+		color: var(--color-navy);
+	}
+
+	.topic-list {
+		list-style: none;
+		padding: 0;
+		margin: 0.5rem 0 1.5rem;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+		gap: 0.25rem 1rem;
+	}
+
+	.topic-list li {
+		padding: 0.35rem 0 0.35rem 1.25rem;
+		position: relative;
+		color: var(--color-muted);
+		font-size: 0.95rem;
+	}
+
+	.topic-list li::before {
+		content: "→";
+		position: absolute;
+		left: 0;
+		color: var(--color-blue);
+		font-weight: 600;
+	}
+
+	.coming-soon-tag {
+		background: var(--color-rust);
+		color: white;
+		padding: 0.2rem 0.6rem;
+		border-radius: 2px;
+		font-size: 0.7rem;
+		letter-spacing: 0.12em;
+	}
+
+	/* CTA */
+	.cta-section {
+		padding: 5rem 0;
+		background: var(--color-navy);
+		text-align: center;
+		color: white;
+	}
+
+	.cta-section h2 {
+		color: white;
+		margin-bottom: 0.75rem;
+	}
+
+	.cta-section p {
+		color: rgba(255,255,255,0.85);
 		margin-bottom: 2rem;
 		font-size: 1.05rem;
 	}
 
-	.course-teaser {
-		background: linear-gradient(135deg, var(--color-navy) 0%, rgba(44,82,130,0.8) 100%);
-		padding: 3.5rem 3rem;
-		border-radius: 12px;
-		text-align: center;
-		box-shadow: 0 12px 40px rgba(44,82,130,0.25);
-		color: white;
-		margin-top: 2rem;
-	}
-
-	.course-teaser h2 {
-		color: white;
-		font-size: 2.2rem;
-		margin-bottom: 1rem;
-	}
-
-	.teaser-intro {
-		margin-bottom: 2rem;
-		max-width: 600px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	.teaser-intro p {
-		color: rgba(255,255,255,0.9);
-		line-height: 1.8;
-		margin-bottom: 1.25rem;
-		font-size: 1rem;
-	}
-
-	.teaser-intro p:first-child {
-		font-weight: 500;
-		color: white;
-	}
-
-	.course-teaser .btn {
+	.cta-section .btn-primary {
 		background: white;
 		color: var(--color-navy);
-		font-weight: 600;
-		padding: 0.8rem 2rem;
 	}
 
-	.course-teaser .btn:hover {
-		background: rgba(255,255,255,0.95);
-	}
-
-	/* Consulting */
-	.consulting-offerings {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-		gap: 2rem;
-		margin-bottom: 3rem;
-	}
-
-	.consulting-card {
-		background: white;
-		padding: 3rem 2.5rem;
-		border-radius: 4px;
-		border: 1px solid #e5e7eb;
-		border-top: 3px solid var(--color-blue);
-		display: flex;
-		flex-direction: column;
-		transition: border-color 0.25s, transform 0.25s;
-	}
-
-	.consulting-card:hover {
-		transform: translateY(-4px);
-		border-top-color: var(--color-navy);
-	}
-
-	.consulting-card h3 {
-		color: var(--color-navy);
-		margin-bottom: 1rem;
-		font-size: 1.2rem;
-	}
-
-	.consulting-card .price {
-		font-size: 1.6rem;
-		font-weight: 700;
-		color: var(--color-blue);
-		margin-bottom: 0.5rem;
-		line-height: 1.2;
-	}
-
-	.consulting-card > p:not(.deliverable) {
-		color: var(--color-muted);
-		font-size: 0.9rem;
-		margin-bottom: 1.5rem;
-	}
-
-	.consulting-card ul {
-		list-style: none;
-		padding: 0;
-		margin: 1rem 0 1.5rem 0;
-		flex-grow: 1;
-	}
-
-	.consulting-card li {
-		padding: 0.4rem 0;
-		padding-left: 1.5rem;
-		position: relative;
-		color: var(--color-muted);
-		font-size: 0.9rem;
-	}
-
-	.consulting-card li::before {
-		content: "✓";
-		position: absolute;
-		left: 0;
-		color: var(--color-blue);
-		font-weight: bold;
-	}
-
-	.consulting-card .deliverable {
-		margin-top: auto;
-		padding-top: 1rem;
-		border-top: 1px solid #e5e7eb;
-		font-size: 0.85rem;
-		color: var(--color-text);
-	}
-
-	.consulting-card .btn {
-		margin-top: 1.5rem;
-		width: 100%;
-		text-align: center;
-	}
-
-	.why-consulting {
-		background: linear-gradient(135deg, rgba(44,82,130,0.05), rgba(235,244,255,0.3));
-		padding: 2rem;
-		border-radius: 4px;
-		margin-top: 2rem;
-	}
-
-	.why-consulting h3 {
-		text-align: center;
-		margin-bottom: 1.5rem;
-	}
-
-	.why-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-		gap: 2.5rem;
-	}
-
-	.why-item {
-		padding: 1.5rem 0 1.5rem 1.5rem;
-		border-left: 3px solid var(--color-blue);
-	}
-
-	.why-item h4 {
-		color: var(--color-navy);
-		margin-bottom: 1rem;
-		font-size: 1.2rem;
-	}
-
-	.why-item p {
-		color: var(--color-muted);
-		font-size: 0.95rem;
-		line-height: 1.7;
-	}
-
-	/* Learning */
-	.learning-overview {
-		display: grid;
-		gap: 3rem;
-	}
-
-	.learning-section h3,
-	.learning-options h3 {
-		text-align: center;
-		margin-bottom: 2rem;
-	}
-
-	.topics-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-		gap: 1.5rem;
-	}
-
-	.topic {
-		background: var(--color-warm);
-		padding: 1.5rem;
-		border-radius: 4px;
-		border-left: 4px solid var(--color-blue);
-	}
-
-	.topic strong {
-		color: var(--color-navy);
-		display: block;
-		margin-bottom: 0.5rem;
-	}
-
-	.topic p {
-		color: var(--color-muted);
-		font-size: 0.95rem;
-		margin: 0;
-	}
-
-	.option-cards {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-		gap: 2rem;
-	}
-
-	.option-card {
-		background: var(--color-warm);
-		padding: 2rem;
-		border-radius: 4px;
-		border-left: 4px solid var(--color-blue);
-		display: flex;
-		flex-direction: column;
-	}
-
-	.option-card.featured {
-		border-left-color: var(--color-rust);
-		background: linear-gradient(135deg, var(--color-warm), rgba(192, 86, 33, 0.05));
-		transform: scale(1.02);
-	}
-
-	.option-card h4 {
-		color: var(--color-navy);
-		margin-bottom: 0.5rem;
-	}
-
-	.option-card .price {
-		font-size: 1.3rem;
-		font-weight: 600;
-		color: var(--color-blue);
-		margin-bottom: 1rem;
-	}
-
-	.option-card ul {
-		list-style: none;
-		padding: 0;
-		margin: 1rem 0;
-		flex-grow: 1;
-	}
-
-	.option-card li {
-		padding: 0.4rem 0;
-		color: var(--color-muted);
-		font-size: 0.9rem;
-	}
-
-	.option-card .btn {
-		margin-top: 1.5rem;
-	}
-
-	.honest-section {
-		margin-top: 2rem;
-		padding: 2rem;
-		background: linear-gradient(135deg, rgba(44,82,130,0.05), rgba(235,244,255,0.3));
-		border-radius: 4px;
-	}
-
-	.honest-section h3 {
-		text-align: center;
-		margin-bottom: 2rem;
-	}
-
-	.honest-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-		gap: 2rem;
-	}
-
-	.honest-card {
-		background: white;
-		padding: 1.5rem;
-		border-radius: 4px;
-		border-left: 4px solid var(--color-blue);
-	}
-
-	.honest-card.good {
-		border-left-color: var(--color-blue);
-	}
-
-	.honest-card.challenge {
-		border-left-color: var(--color-rust);
-	}
-
-	.honest-card h4 {
-		color: var(--color-navy);
-		margin-bottom: 1rem;
-	}
-
-	.honest-card ul {
-		list-style: none;
-		padding: 0;
-	}
-
-	.honest-card li {
-		padding: 0.5rem 0;
-		padding-left: 1.5rem;
-		position: relative;
-		color: var(--color-muted);
-		font-size: 0.9rem;
-	}
-
-	.honest-card li::before {
-		position: absolute;
-		left: 0;
-		font-weight: bold;
-	}
-
-	.honest-card.good li::before {
-		content: "✓";
-		color: var(--color-blue);
-	}
-
-	.honest-card.challenge li::before {
-		content: "•";
-		color: var(--color-rust);
-	}
-
-	.instructors-section {
-		margin-top: 3rem;
-		padding-top: 2rem;
-		border-top: 1px solid #e2e8f0;
-	}
-
-	.instructors-section h3 {
-		text-align: center;
-		margin-bottom: 2rem;
-	}
-
-	.instructor-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-		gap: 2rem;
-	}
-
-	.instructor-card {
-		background: var(--color-warm);
-		padding: 1.5rem;
-		border-radius: 4px;
-		border-left: 4px solid var(--color-blue);
-	}
-
-	.instructor-photo {
-		width: 100%;
-		height: 250px;
-		object-fit: cover;
-		border-radius: 4px;
-		margin-bottom: 1rem;
-		display: block;
-	}
-
-	.instructor-card h4 {
-		color: var(--color-navy);
-		margin-bottom: 0.25rem;
-		font-size: 1.1rem;
-	}
-
-	.instructor-card .role {
-		color: var(--color-blue);
-		font-size: 0.85rem;
-		font-weight: 600;
-		margin-bottom: 0.75rem;
-		display: block;
-	}
-
-	.instructor-card p {
-		color: var(--color-muted);
-		font-size: 0.9rem;
-		line-height: 1.6;
-		margin: 0;
-	}
-
-	/* Products */
-	.products-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-		gap: 2.5rem;
-	}
-
-	.product-card {
-		background: white;
-		padding: 2.5rem;
-		border-radius: 4px;
-		border: 1px solid #e5e7eb;
-		display: flex;
-		flex-direction: column;
-		transition: border-color 0.25s, transform 0.25s;
-	}
-
-	.product-card:hover {
-		transform: translateY(-4px);
-		border-color: var(--color-blue);
-	}
-
-	.product-card.bundle {
-		border: 1px solid var(--color-blue);
-		border-top: 3px solid var(--color-blue);
-	}
-
-	.product-card.bundle::before {
-		content: "BEST VALUE";
-		display: block;
-		color: var(--color-blue);
-		font-weight: 600;
-		font-size: 0.72rem;
-		letter-spacing: 0.18em;
-		margin-bottom: 1rem;
-	}
-
-	.product-card h3 {
-		color: var(--color-navy);
-		margin-bottom: 0.75rem;
-		font-size: 1.35rem;
-	}
-
-	.product-card .price {
-		font-size: 2rem;
-		font-weight: 700;
-		color: var(--color-blue);
-		margin-bottom: 0.25rem;
-	}
-
-	.product-card .savings {
-		color: var(--color-rust);
-		font-size: 0.85rem;
-		font-weight: 600;
-		margin-bottom: 1rem;
-		display: block;
-	}
-
-	.product-card > p:not(.price) {
-		color: var(--color-text);
-		margin-bottom: 1.5rem;
-		line-height: 1.6;
-	}
-
-	.product-card ul {
-		list-style: none;
-		padding: 0;
-		margin: 0 0 1.5rem 0;
-		flex-grow: 1;
-	}
-
-	.product-card li {
-		padding: 0.5rem 0;
-		padding-left: 1.75rem;
-		position: relative;
-		color: var(--color-muted);
-		font-size: 0.9rem;
-		line-height: 1.5;
-	}
-
-	.product-card li::before {
-		content: "✓";
-		position: absolute;
-		left: 0;
-		color: var(--color-blue);
-		font-weight: bold;
-		font-size: 1.1rem;
-	}
-
-	.product-card .btn {
-		margin-top: auto;
-		width: 100%;
-		text-align: center;
-	}
-
-	/* How It Works */
-	.how-it-works {
-		margin-top: 3rem;
-		padding-top: 2.5rem;
-		border-top: 1px solid #e2e8f0;
-		text-align: center;
-	}
-
-	.how-it-works h3 {
-		margin-bottom: 2rem;
-		font-size: 1.5rem;
-	}
-
-	.process-steps {
-		list-style: none;
-		counter-reset: steps;
-		padding: 0;
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-		gap: 1.5rem;
-		text-align: left;
-	}
-
-	.process-steps li {
-		counter-increment: steps;
-		padding: 1.5rem;
-		border-left: 3px solid var(--color-blue);
-		position: relative;
-		font-size: 0.95rem;
-		color: var(--color-muted);
-		line-height: 1.6;
-	}
-
-	.process-steps li::before {
-		content: "0" counter(steps);
-		display: block;
-		font-size: 0.75rem;
-		font-weight: 700;
-		letter-spacing: 0.15em;
-		color: var(--color-blue);
-		margin-bottom: 0.5rem;
-	}
-
-	.process-steps strong {
-		color: var(--color-navy);
-	}
-
-	/* Final CTA */
-	.final-cta {
-		margin-top: 4rem;
-		padding: 3rem;
-		background: var(--color-blue);
-		color: white;
-		border-radius: 4px;
-		text-align: center;
-	}
-
-	.final-cta h2 {
-		color: white;
-		margin-bottom: 1rem;
-	}
-
-	.final-cta p {
-		color: white;
-		opacity: 0.95;
-		margin-bottom: 1.5rem;
-	}
-
-	.final-cta .btn {
-		background: white;
-		color: var(--color-blue);
-	}
-
-	.final-cta .btn:hover {
-		background: var(--color-sky);
-	}
-
-	/* Mobile */
 	@media (max-width: 768px) {
-		.option-card.featured {
-			transform: scale(1);
+		.offering-block--featured {
+			padding: 2rem;
 		}
 
-		.consulting-offerings,
-		.topics-grid,
-		.option-cards,
-		.instructor-grid,
-		.products-grid {
+		.topic-list {
 			grid-template-columns: 1fr;
 		}
 	}
