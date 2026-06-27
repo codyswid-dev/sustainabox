@@ -8,24 +8,132 @@ import Layout from '../layouts/Layout.astro';
 		<div class="page-hero-inner">
 			<span class="eyebrow">Contact</span>
 			<h1>Get in Touch</h1>
-			<p>Questions about a stay, the walkthrough, or your own build? Let's talk.</p>
+			<p>Questions about a stay, the walkthrough, or your own build? We'd love to hear from you.</p>
 		</div>
 	</header>
 
+	<!-- Contact Cards -->
 	<section class="container content-section">
-		<div class="contact-box">
-			<h2>Reach Out</h2>
-			<p>Email us to:</p>
-			<ul>
-				<li>Check availability and book a stay</li>
-				<li>Ask about the 4-hour walkthrough</li>
-				<li>Inquire about the course or design tools</li>
-				<li>Anything else</li>
-			</ul>
-			<p style="margin-top: 2rem;">
-				<strong><a href="mailto:jenswid@gmail.com,codyswid@gmail.com?subject=Sustainabox%20Inquiry" style="color: var(--color-blue); text-decoration: none; font-size: 1.2rem;">Email the Sustainabox Team</a></strong>
-			</p>
-			<p style="color: var(--color-muted); margin-top: 1rem;">We'll respond within 24 hours. Coming soon: hello@sustainabox.org</p>
+		<div class="section-head">
+			<span class="eyebrow">Reach Out</span>
+			<h2>How Can We Help?</h2>
+			<p>Pick the option that fits — we respond to all inquiries within 24 hours.</p>
+		</div>
+
+		<div class="contact-grid">
+			<div class="contact-card">
+				<div class="contact-card-icon">🏠</div>
+				<h3>Book a Stay</h3>
+				<p>Ready to spend a weekend at Sustainabox? Share your preferred dates and group size and we'll get you set up.</p>
+				<a href="mailto:jenswid@gmail.com,codyswid@gmail.com?subject=Sustainabox%20Stay%20Inquiry" class="btn btn-primary">Email to Book</a>
+			</div>
+
+			<div class="contact-card">
+				<div class="contact-card-icon">📐</div>
+				<h3>Consulting & Design</h3>
+				<p>Planning your own container home or alternative build? We offer design review, planning packages, and ongoing support.</p>
+				<a href="mailto:jenswid@gmail.com,codyswid@gmail.com?subject=Sustainabox%20Consulting%20Inquiry" class="btn btn-primary">Start a Conversation</a>
+			</div>
+
+			<div class="contact-card">
+				<div class="contact-card-icon">🎓</div>
+				<h3>Course & Tools</h3>
+				<p>Questions about the 4-hour walkthrough, digital templates, or anything else we offer? We're happy to help.</p>
+				<a href="mailto:jenswid@gmail.com,codyswid@gmail.com?subject=Sustainabox%20Course%20Inquiry" class="btn btn-primary">Ask Us Anything</a>
+			</div>
+		</div>
+
+		<p class="response-note">We respond within 24 hours. Coming soon: <em>hello@sustainabox.org</em></p>
+	</section>
+
+	<!-- Meet the Team -->
+	<section class="team-section">
+		<div class="container">
+			<div class="section-head">
+				<span class="eyebrow">Who You're Talking To</span>
+				<h2>Meet Jen & Cody</h2>
+			</div>
+
+			<div class="team-grid">
+				<div class="team-card">
+					<img src="/images/PXL_20240818_015903821.PORTRAIT.jpg" alt="Jen Swidler — General Contractor & Builder" class="team-photo" />
+					<div class="team-info">
+						<h3>Jen Swidler</h3>
+						<span class="team-role">General Contractor & Builder</span>
+						<p>Seven years of hands-on homebuilding and general contracting. Jen designed and led the Sustainabox build from foundation to finishes — she knows every system, every decision, and every tradeoff firsthand.</p>
+						<p>She leads all stay experiences and in-person walkthroughs.</p>
+					</div>
+				</div>
+
+				<div class="team-card">
+					<div class="team-photo team-photo-placeholder">
+						<span>CS</span>
+					</div>
+					<div class="team-info">
+						<h3>Cody Swidler</h3>
+						<span class="team-role">Enterprise Resilience & Risk</span>
+						<p>15+ years in enterprise risk, operational resilience, and security across global fintech, SaaS, and tech companies. Cody brings systems thinking and resilience design principles to every aspect of the build.</p>
+						<p>He leads consulting engagements and the risk/resilience curriculum.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Location -->
+	<section class="location-section">
+		<div class="container">
+			<div class="location-inner">
+				<div class="location-text">
+					<span class="eyebrow">Where We Are</span>
+					<h2>Texas Hill Country</h2>
+					<p>Sustainabox is located in the Texas Hill Country — a short drive from Austin. Exact address shared upon booking confirmation.</p>
+					<ul class="location-details">
+						<li>~1.5 hours from Austin–Bergstrom International Airport</li>
+						<li>Private property with lake access</li>
+						<li>Quiet, rural setting — no nearby noise or light pollution</li>
+						<li>Flexible check-in after 4pm Friday</li>
+					</ul>
+				</div>
+				<div class="location-image">
+					<img src="/images/Lake.jpg" alt="Sustainabox property — Texas Hill Country" />
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- FAQ -->
+	<section class="container faq-section">
+		<div class="section-head">
+			<span class="eyebrow">Common Questions</span>
+			<h2>Before You Reach Out</h2>
+		</div>
+
+		<div class="faq-grid">
+			<div class="faq-item">
+				<h4>How do I book a stay?</h4>
+				<p>Email us with your preferred dates and group size. We'll confirm availability, share details, and collect a deposit via Venmo to hold your dates.</p>
+			</div>
+			<div class="faq-item">
+				<h4>Is the walkthrough always included?</h4>
+				<p>Yes — either in-person with Jen when we're on-site, or via the 4-hour recorded video walkthrough with projector setup when we're traveling.</p>
+			</div>
+			<div class="faq-item">
+				<h4>How many guests can you host?</h4>
+				<p>Comfortably 2–4 guests. The property can accommodate up to 6 for group stays — reach out to discuss options.</p>
+			</div>
+			<div class="faq-item">
+				<h4>Is it actually off-grid?</h4>
+				<p>No — Sustainabox is grid-connected (water, septic, electric) but designed with resilience principles. Think of it as infrastructure-ready with self-sufficiency in mind.</p>
+			</div>
+			<div class="faq-item">
+				<h4>Can I bring my own build plans to review?</h4>
+				<p>Absolutely. Many guests come with specific questions about their own projects. Bring drawings, photos, or questions and we'll work through them together.</p>
+			</div>
+			<div class="faq-item">
+				<h4>Do you offer consulting without a stay?</h4>
+				<p>Yes. We offer remote design review, planning packages, and ongoing support — no travel required. See the <a href="/offerings">Offerings page</a> for details.</p>
+			</div>
 		</div>
 	</section>
 
@@ -33,46 +141,235 @@ import Layout from '../layouts/Layout.astro';
 
 <style>
 	.content-section {
-		padding: 4rem 0;
+		padding: 5rem 0 3rem;
 	}
 
-	.contact-box {
-		background: var(--color-warm);
-		padding: 3rem;
-		border-radius: 12px;
-		max-width: 500px;
-		margin: 0 auto;
+	.contact-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.contact-card {
+		background: white;
+		border: 1px solid #e5e7eb;
+		border-top: 3px solid var(--color-blue);
+		padding: 2.5rem 2rem;
+		border-radius: 4px;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.contact-card-icon {
+		font-size: 1.75rem;
+	}
+
+	.contact-card h3 {
+		color: var(--color-navy);
+		font-size: 1.2rem;
+		margin: 0;
+	}
+
+	.contact-card p {
+		color: var(--color-muted);
+		font-size: 0.95rem;
+		line-height: 1.7;
+		flex-grow: 1;
+		margin: 0;
+	}
+
+	.contact-card .btn {
+		align-self: flex-start;
+	}
+
+	.response-note {
 		text-align: center;
-		border-left: 4px solid var(--color-blue);
+		color: var(--color-muted);
+		font-size: 0.9rem;
+		margin-top: 1.5rem;
 	}
 
-	.contact-box h2 {
-		margin-bottom: 1.5rem;
+	/* Team */
+	.team-section {
+		padding: 5rem 0;
+		background: var(--color-warm);
 	}
 
-	.contact-box p {
-		font-size: 1rem;
+	.team-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+		gap: 3rem;
+	}
+
+	.team-card {
+		display: flex;
+		gap: 2rem;
+		align-items: flex-start;
+	}
+
+	.team-photo {
+		width: 120px;
+		height: 120px;
+		object-fit: cover;
+		border-radius: 4px;
+		flex-shrink: 0;
+	}
+
+	.team-photo-placeholder {
+		width: 120px;
+		height: 120px;
+		background: var(--color-navy);
+		border-radius: 4px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-shrink: 0;
+		color: white;
+		font-family: var(--font-heading);
+		font-size: 1.5rem;
+		font-weight: 700;
+	}
+
+	.team-info h3 {
+		color: var(--color-navy);
+		margin-bottom: 0.25rem;
+		font-size: 1.2rem;
+	}
+
+	.team-role {
+		display: block;
+		font-size: 0.8rem;
+		font-weight: 600;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+		color: var(--color-blue);
+		margin-bottom: 0.75rem;
+	}
+
+	.team-info p {
+		color: var(--color-muted);
+		font-size: 0.9rem;
+		line-height: 1.7;
+		margin-bottom: 0.5rem;
+	}
+
+	/* Location */
+	.location-section {
+		padding: 5rem 0;
+		background: white;
+	}
+
+	.location-inner {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 4rem;
+		align-items: center;
+	}
+
+	.location-text h2 {
 		margin-bottom: 1rem;
 	}
 
-	.contact-box ul {
-		list-style: none;
-		padding: 0;
-		text-align: left;
-		display: inline-block;
+	.location-text > p {
+		color: var(--color-muted);
+		line-height: 1.7;
+		margin-bottom: 1.5rem;
 	}
 
-	.contact-box li {
+	.location-details {
+		list-style: none;
+		padding: 0;
+	}
+
+	.location-details li {
 		padding: 0.5rem 0;
 		padding-left: 1.5rem;
 		position: relative;
+		color: var(--color-muted);
+		font-size: 0.95rem;
+		border-bottom: 1px solid #f0f0f0;
 	}
 
-	.contact-box li::before {
-		content: "✓";
+	.location-details li:last-child {
+		border-bottom: none;
+	}
+
+	.location-details li::before {
+		content: "→";
 		position: absolute;
 		left: 0;
 		color: var(--color-blue);
-		font-weight: 700;
+		font-weight: 600;
+	}
+
+	.location-image img {
+		width: 100%;
+		aspect-ratio: 4 / 3;
+		object-fit: cover;
+		border-radius: 4px;
+	}
+
+	/* FAQ */
+	.faq-section {
+		padding: 5rem 0;
+	}
+
+	.faq-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+		gap: 2rem;
+	}
+
+	.faq-item {
+		padding: 1.5rem 0 1.5rem 1.5rem;
+		border-left: 3px solid var(--color-blue);
+	}
+
+	.faq-item h4 {
+		color: var(--color-navy);
+		margin-bottom: 0.75rem;
+		font-size: 1rem;
+	}
+
+	.faq-item p {
+		color: var(--color-muted);
+		font-size: 0.9rem;
+		line-height: 1.7;
+		margin: 0;
+	}
+
+	.faq-item a {
+		color: var(--color-blue);
+	}
+
+	/* Mobile */
+	@media (max-width: 768px) {
+		.team-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.team-card {
+			flex-direction: column;
+			gap: 1.5rem;
+		}
+
+		.location-inner {
+			grid-template-columns: 1fr;
+			gap: 2rem;
+		}
+
+		.location-image {
+			order: -1;
+		}
+
+		.faq-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.contact-grid {
+			grid-template-columns: 1fr;
+		}
 	}
 </style>
