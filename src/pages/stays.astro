@@ -264,6 +264,28 @@ import Layout from '../layouts/Layout.astro';
 		</div>
 	</section>
 
+	<!-- Availability Calendar -->
+	<section class="calendar-section">
+		<div class="container">
+			<div class="section-head">
+				<span class="eyebrow">Availability</span>
+				<h2>Check Open Dates</h2>
+				<p>Green dates are available. Reach out to confirm and reserve.</p>
+			</div>
+
+			<!-- JEN: Replace this placeholder div with your Google Calendar embed code.
+			     In Google Calendar → Settings → your calendar → "Integrate calendar" → copy the iframe embed code.
+			     Set width="100%" and height="600" on the iframe. -->
+			<div class="calendar-placeholder">
+				<div class="calendar-placeholder-inner">
+					<p><strong>Calendar coming soon</strong></p>
+					<p>Live availability will appear here once we connect our booking calendar.</p>
+					<a href="/book" class="btn btn-outline" style="margin-top: 1.5rem; display: inline-block;">Request a Stay</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<!-- Also Explore Course -->
 	<section class="course-cta-section">
 		<div class="container">
@@ -806,6 +828,44 @@ import Layout from '../layouts/Layout.astro';
 		color: var(--color-navy);
 		display: block;
 		margin-bottom: 0.5rem;
+	}
+
+	/* Calendar Section */
+	.calendar-section {
+		padding: 5rem 0;
+		background: var(--color-warm);
+		border-bottom: 1px solid #e2e8f0;
+	}
+
+	.calendar-placeholder {
+		max-width: 900px;
+		margin: 0 auto;
+		border: 2px dashed #cbd5e0;
+		border-radius: 4px;
+		background: white;
+		overflow: hidden;
+	}
+
+	.calendar-placeholder-inner {
+		padding: 4rem 2rem;
+		text-align: center;
+		color: var(--color-muted);
+	}
+
+	.calendar-placeholder-inner p {
+		margin: 0.5rem 0;
+	}
+
+	.calendar-placeholder-inner strong {
+		color: var(--color-navy);
+		font-size: 1.1rem;
+	}
+
+	.calendar-placeholder iframe {
+		width: 100%;
+		height: 600px;
+		border: none;
+		display: block;
 	}
 
 	/* CTA Section */
