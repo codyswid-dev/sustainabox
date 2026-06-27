@@ -259,12 +259,21 @@ import Layout from '../layouts/Layout.astro';
 
 			let currentSlide = 0;
 
+			const wrapper = document.querySelector('.carousel-wrapper');
+
+			function updateHeight(n) {
+				if (wrapper) wrapper.style.height = (slides[n].scrollHeight + 80) + 'px';
+			}
+
 			function showSlide(n) {
 				carousel.style.transform = `translateX(-${n * 100}%)`;
 				indicators.forEach(indicator => indicator.classList.remove('active'));
 				indicators[n].classList.add('active');
 				currentSlide = n;
+				updateHeight(n);
 			}
+
+			updateHeight(0);
 
 			function nextSlide() {
 				const next = (currentSlide + 1) % slides.length;
@@ -473,6 +482,7 @@ import Layout from '../layouts/Layout.astro';
 		border-radius: 4px;
 		padding: 2rem;
 		overflow: hidden;
+		transition: height 0.4s ease;
 	}
 
 	.carousel {
@@ -502,14 +512,14 @@ import Layout from '../layouts/Layout.astro';
 
 	.slide-gallery {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
 		gap: 1rem;
 		margin-bottom: 1rem;
 	}
 
 	.slide-gallery img {
 		width: 100%;
-		height: 200px;
+		aspect-ratio: 4 / 3;
 		object-fit: cover;
 		border-radius: 4px;
 		cursor: pointer;
@@ -590,11 +600,6 @@ import Layout from '../layouts/Layout.astro';
 
 		.slide-gallery {
 			grid-template-columns: repeat(2, 1fr);
-			gap: 1rem;
-		}
-
-		.slide-gallery img {
-			height: 200px;
 		}
 	}
 </style>
