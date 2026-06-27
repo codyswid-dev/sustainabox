@@ -12,6 +12,30 @@ import Layout from '../layouts/Layout.astro';
 		</div>
 	</header>
 
+	<!-- Availability Calendar -->
+	<section class="calendar-section">
+		<div class="container">
+			<div class="section-head">
+				<span class="eyebrow">Availability</span>
+				<h2>Check Open Dates</h2>
+				<p>Green dates are available. Reach out to confirm and reserve.</p>
+			</div>
+
+			<!-- JEN: Replace this placeholder div with your Google Calendar embed code.
+			     In Google Calendar → Settings → your calendar → "Integrate calendar" → copy the iframe embed code.
+			     Set width="100%" and height="600" on the iframe. -->
+			<div class="calendar-placeholder">
+				<div class="calendar-placeholder-inner">
+					<div class="calendar-icon">📅</div>
+					<p><strong>Calendar coming soon</strong></p>
+					<p>Live availability will appear here once we connect our booking calendar.</p>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- Booking Details -->
 	<section class="container content-section">
 		<div class="booking-wrapper">
 			<div class="booking-info">
@@ -49,24 +73,25 @@ import Layout from '../layouts/Layout.astro';
 				<div class="booking-divider"></div>
 
 				<h3>Get in Touch</h3>
-				<p>To check availability and book your stay, reach out to the Sustainabox team:</p>
+				<p>See a date that works? Reach out and we'll confirm within 24 hours.</p>
 
 				<a href="mailto:jenswid@gmail.com,codyswid@gmail.com?subject=Sustainabox%20Stay%20Inquiry" class="btn btn-primary" style="display: inline-block; margin: 1.5rem 0;">Request Your Stay</a>
 
-				<p style="font-size: 0.9rem; color: var(--color-muted);">Include your preferred dates and number of guests. We typically respond within 24 hours.</p>
-				<p style="font-size: 0.85rem; color: var(--color-muted); margin-top: 1rem;"><em>Coming soon: hello@sustainabox.org</em></p>
+				<p style="font-size: 0.9rem; color: var(--color-muted);">Include your preferred dates and number of guests.</p>
+				<p style="font-size: 0.85rem; color: var(--color-muted); margin-top: 0.5rem;"><em>Coming soon: hello@sustainabox.org</em></p>
 
 				<div class="booking-divider" style="margin: 2rem 0;"></div>
 
 				<h3>Payment</h3>
 				<p>We accept Venmo for deposit or full payment:</p>
+				<!-- JEN: Replace [JEN_VENMO_USERNAME] with your Venmo handle (e.g. @jen-swidler) -->
 				<p style="margin: 1rem 0;"><strong>@[JEN_VENMO_USERNAME]</strong></p>
-				<p style="font-size: 0.9rem; color: var(--color-muted);">Please note: Payment details will be confirmed when we receive your inquiry.</p>
+				<p style="font-size: 0.9rem; color: var(--color-muted);">Payment details confirmed when we receive your inquiry.</p>
 			</div>
 
 			<div class="booking-preview">
 				<div class="preview-box">
-					<img src="/images/deck%202.jpeg" alt="Sustainabox outdoor living space" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
+					<img src="/images/deck%202.jpeg" alt="Sustainabox outdoor living space" style="width: 100%; border-radius: 4px; margin-bottom: 1.5rem;">
 					<h3>What to Expect</h3>
 					<ul>
 						<li><strong>Friday evening:</strong> Arrival, orientation, dinner</li>
@@ -91,6 +116,49 @@ import Layout from '../layouts/Layout.astro';
 </Layout>
 
 <style>
+	.calendar-section {
+		padding: 5rem 0 3rem;
+		background: var(--color-warm);
+		border-bottom: 1px solid #e2e8f0;
+	}
+
+	.calendar-placeholder {
+		max-width: 900px;
+		margin: 0 auto;
+		border: 2px dashed #cbd5e0;
+		border-radius: 4px;
+		background: white;
+		overflow: hidden;
+	}
+
+	.calendar-placeholder-inner {
+		padding: 5rem 2rem;
+		text-align: center;
+		color: var(--color-muted);
+	}
+
+	.calendar-icon {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
+
+	.calendar-placeholder-inner p {
+		margin: 0.5rem 0;
+	}
+
+	.calendar-placeholder-inner strong {
+		color: var(--color-navy);
+		font-size: 1.1rem;
+	}
+
+	/* When Jen replaces the placeholder with the real iframe, these styles apply */
+	.calendar-placeholder iframe {
+		width: 100%;
+		height: 600px;
+		border: none;
+		display: block;
+	}
+
 	.content-section {
 		padding: 4rem 0;
 	}
@@ -140,7 +208,7 @@ import Layout from '../layouts/Layout.astro';
 		margin: 2rem 0;
 	}
 
-.booking-preview {
+	.booking-preview {
 		position: sticky;
 		top: 100px;
 		height: fit-content;
@@ -150,7 +218,7 @@ import Layout from '../layouts/Layout.astro';
 		background: white;
 		padding: 2rem;
 		border: 1px solid #e2e8f0;
-		border-radius: 8px;
+		border-radius: 4px;
 	}
 
 	.preview-box h3 {
@@ -169,6 +237,11 @@ import Layout from '../layouts/Layout.astro';
 		color: var(--color-muted);
 		font-size: 0.9rem;
 		line-height: 1.6;
+		border-bottom: 1px solid #f0f0f0;
+	}
+
+	.preview-box li:last-child {
+		border-bottom: none;
 	}
 
 	@media (max-width: 768px) {
@@ -181,8 +254,8 @@ import Layout from '../layouts/Layout.astro';
 			position: static;
 		}
 
-		.contact-links {
-			flex-direction: column;
+		.calendar-placeholder-inner {
+			padding: 3rem 1.5rem;
 		}
 	}
 </style>
