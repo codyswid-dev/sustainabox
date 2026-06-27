@@ -39,36 +39,16 @@ import Layout from '../layouts/Layout.astro';
 	<section class="container content-section">
 		<div class="booking-wrapper">
 			<div class="booking-info">
-				<h2>Sustainabox Stays</h2>
-				<p><strong>Weekend Experience</strong><br>Friday evening through Sunday afternoon</p>
+				<h2>Weekend Builder Experience</h2>
+				<p class="price-display">$699</p>
+				<p>Friday evening through Sunday afternoon · Up to 4 guests</p>
 
-				<h3 style="margin-top: 1.5rem;">Base Stay</h3>
-				<ul>
-					<li>Accommodations for 2–4 guests</li>
-					<li>Educational materials and design documentation</li>
-					<li>Full access to property</li>
+				<ul style="margin-top: 1.5rem;">
+					<li>Friday–Sunday stay at Sustainabox</li>
+					<li>4-hour build walkthrough with Jen — or recorded tour when we're traveling</li>
+					<li>Q&A with the builders</li>
+					<li>Design resources and build documentation</li>
 				</ul>
-
-				<h3 style="margin-top: 1.5rem;">4-Hour Walkthrough (Add-on)</h3>
-				<p><strong>Option A: In-Person Walkthrough</strong></p>
-				<ul style="margin-bottom: 1.5rem;">
-					<li>Saturday morning: expert-led tour of all systems</li>
-					<li>Q&A with builders and designers</li>
-					<li>Design documentation and specs</li>
-					<li><strong>Included with stay</strong> (when hosts are available)</li>
-				</ul>
-
-				<p><strong>Option B: Video Walkthrough + Projector</strong></p>
-				<ul>
-					<li>4-hour recorded tour of all systems</li>
-					<li>Projector setup in main living area</li>
-					<li>Fridge stocked with drinks & snacks</li>
-					<li>Available when hosts are traveling</li>
-				</ul>
-
-				<p style="margin-top: 2rem;"><strong>Pricing</strong><br>
-				Base stay: $599–$799 (depending on group size & season)<br>
-				Walkthrough: Included</p>
 
 				<div class="booking-divider"></div>
 
@@ -179,6 +159,14 @@ import Layout from '../layouts/Layout.astro';
 		color: var(--color-muted);
 		margin-bottom: 1rem;
 		line-height: 1.7;
+	}
+
+	.price-display {
+		font-size: 2.2rem;
+		font-weight: 700;
+		color: var(--color-blue);
+		font-family: var(--font-heading);
+		margin: 0.5rem 0 0.25rem;
 	}
 
 	.booking-info ul {
