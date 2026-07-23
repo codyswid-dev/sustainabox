@@ -1,6 +1,17 @@
 # Sustainabox — Improvement Plan
 
-Status as of 2026-07-22. Done items are deployed to sustainabox.org.
+Status as of 2026-07-23. Done items are deployed to sustainabox.org.
+
+## Done (2026-07-23)
+
+- [x] Verified all 2026-07-22 work live (sitemap 200, 404 handling,
+      WebP serving, JSON-LD present, og JPGs). Note: Cloudflare merges its
+      managed AI-crawler-blocking rules into robots.txt — sitemap line intact.
+- [x] Image housekeeping: moved 129 unreferenced originals (253 MB) out of
+      `public/images` to `source-media/originals/` (also in git history).
+      `public/images` is now 11 MB (WebP set + og JPGs).
+- [x] Preload hint for the homepage hero image (first carousel slide)
+- [x] Deleted leftover `sustainabox-uploads-backup.zip` from SiteGround
 
 ## Done (2026-07-22)
 
@@ -35,20 +46,14 @@ builds and deploys automatically. Then gitignore `dist/` (removes ~150 MB of
 build output from the repo and the "forgot to rebuild" failure mode).
 Setup: Cloudflare dash → Workers → sustainabox → Settings → Builds.
 
-### 3. Image housekeeping (mechanical, no decisions)
-- Delete now-unreferenced original JPG/PNGs from `public/images/`
-  (the WebP versions are what the site serves; originals stay in
-  `source-media/` and git history). Cuts repo + deploy size dramatically.
-- `og-interior.jpg` etc. are the only JPGs that must stay.
-
-### 4. SEO follow-through
+### 3. SEO follow-through
 - Register site in Google Search Console; submit sitemap.
 - Create a Google Business Profile (vacation rental) once you decide how
   public to make the location.
 - Consider a short FAQ section on /stays (schema.org FAQPage) — questions
   you get by email are good source material.
 
-### 5. Content ideas (when there's time)
+### 4. Content ideas (when there's time)
 - Construction page: the recovered WordPress archive in `source-media/` has
   survey/topo/septic/elevation scans not currently on the site.
 - A "progress blog" or dated build-log section — good for SEO freshness and
@@ -58,9 +63,10 @@ Setup: Cloudflare dash → Workers → sustainabox → Settings → Builds.
 
 ## Housekeeping reminders
 
-- Delete `sustainabox-uploads-backup.zip` (176 MB) from SiteGround
-  `public_html/wp-content/uploads/` — local copy exists in `source-media/`.
 - Decide whether to cancel the SiteGround hosting plan now that everything
   is recovered (old WordPress site is no longer serving the domain).
+- Note for auto-deploy (item 2): connecting Workers Builds requires granting
+  Cloudflare access to the GitHub repo — do this together in a session since
+  it's an account-level authorization.
 - Keep pricing/capacity claims in sync with `..\Travel365\site\stay.html`
   (currently: $699 weekend, up to 4 guests, 750 sq ft, 1,280 sq ft deck).

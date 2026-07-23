@@ -3,10 +3,12 @@ interface Props {
 	title: string;
 	description?: string;
 	image?: string;
+	preloadImage?: string;
 }
 
 const {
 	title,
+	preloadImage,
 	description = "A container home in the Texas Hill Country — stay the weekend, learn the build. Expert walkthroughs, consulting, and digital tools for alternative housing.",
 	image = "/images/og-interior.jpg"
 } = Astro.props;
@@ -55,6 +57,7 @@ const structuredData = JSON.stringify({
 		<meta name="twitter:title" content={title} />
 		<meta name="twitter:description" content={description} />
 		<meta name="twitter:image" content={`https://sustainabox.org${image}`} />
+		{preloadImage && <link rel="preload" as="image" href={preloadImage} />}
 		<script type="application/ld+json" set:html={structuredData} />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
