@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sustainabox.org/sitemap-index.xml

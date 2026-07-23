@@ -1,0 +1,48 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Page Not Found — Sustainabox" description="That page doesn't exist. Head back to the Sustainabox container home in the Texas Hill Country.">
+	<section class="notfound">
+		<p class="notfound-code">404</p>
+		<h1>This page wandered off the property.</h1>
+		<p class="notfound-text">
+			The page you're looking for doesn't exist — maybe it moved, or maybe it
+			never got built. Either way, the container home is still standing.
+		</p>
+		<div class="notfound-actions">
+			<a href="/" class="btn btn-primary">Back to Home</a>
+			<a href="/stays" class="btn btn-secondary">Book a Stay</a>
+		</div>
+	</section>
+</Layout>
+
+<style>
+	.notfound {
+		max-width: 640px;
+		margin: 0 auto;
+		padding: 8rem 1.5rem 6rem;
+		text-align: center;
+	}
+	.notfound-code {
+		font-size: 5rem;
+		font-weight: 700;
+		font-family: "Playfair Display", serif;
+		color: #2f4f3e;
+		margin: 0;
+		line-height: 1;
+	}
+	.notfound h1 {
+		margin: 1rem 0;
+	}
+	.notfound-text {
+		color: #555;
+		margin-bottom: 2rem;
+	}
+	.notfound-actions {
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+</style>

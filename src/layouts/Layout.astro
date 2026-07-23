@@ -8,10 +8,30 @@ interface Props {
 const {
 	title,
 	description = "A container home in the Texas Hill Country — stay the weekend, learn the build. Expert walkthroughs, consulting, and digital tools for alternative housing.",
-	image = "/images/Interior-1-1.jpg"
+	image = "/images/og-interior.jpg"
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, "https://sustainabox.org");
+
+const structuredData = JSON.stringify({
+	"@context": "https://schema.org",
+	"@type": "VacationRental",
+	name: "Sustainabox",
+	description:
+		"A three-container home in the Texas Hill Country — stay the weekend, learn the build.",
+	url: "https://sustainabox.org",
+	image: "https://sustainabox.org/images/og-interior.jpg",
+	address: {
+		"@type": "PostalAddress",
+		addressRegion: "TX",
+		addressCountry: "US"
+	},
+	containsPlace: {
+		"@type": "Accommodation",
+		occupancy: { "@type": "QuantitativeValue", maxValue: 4 },
+		floorSize: { "@type": "QuantitativeValue", value: 750, unitCode: "FTK" }
+	}
+});
 ---
 
 <!doctype html>
@@ -35,6 +55,7 @@ const canonicalURL = new URL(Astro.url.pathname, "https://sustainabox.org");
 		<meta name="twitter:title" content={title} />
 		<meta name="twitter:description" content={description} />
 		<meta name="twitter:image" content={`https://sustainabox.org${image}`} />
+		<script type="application/ld+json" set:html={structuredData} />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
